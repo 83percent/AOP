@@ -1,0 +1,162 @@
+.main-wrapper {
+    background-color: #000000;
+    width: 100%;
+    min-height: 200%;
+}
+.main-wrapper > nav.fixed-button {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+    z-index: 999;
+}
+.main-wrapper > nav.fixed-button > div {
+    position: fixed;
+    bottom: 1rem;
+    width: 14rem;
+    background: #dd1818; 
+    padding: 0.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    text-align: center;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    opacity: 0.6;
+}
+
+.main-wrapper > nav.fixed-button > div:hover, .main-wrapper > nav.fixed-button > div.on {
+    width: 27rem;
+    bottom: 1.5rem;
+    opacity: 1.0;
+}
+.main-wrapper > nav.fixed-button > div > button {
+    all: unset;
+    padding: 0 0.5rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+/*
+    Home
+*/
+
+
+.main-wrapper > .home {
+    color: #fff;
+}
+.main-wrapper > .home > section h1 {
+    color: #ffffff;
+    word-break: keep-all;
+}
+.main-wrapper > .home > section a {
+    color: #06c;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.main-wrapper > .home > section.top {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ),url("../../image/home_background.jpg");
+    background-position: 50%, 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-wrapper > .home > section.top > img {
+    width: 16rem;
+}
+/*
+    row
+*/
+.main-wrapper > .home > section.row {
+    display: flex;
+    margin-top: 4rem;
+}
+.main-wrapper > .home > section.row > div {
+    max-width: 50%;
+    width: 50%;
+}
+.main-wrapper > .home > section.row > div > img {
+    height: 80vh;
+    filter: brightness(50%);
+}
+.main-wrapper > .home > section.row > div.right > img {
+    text-align: left;
+}
+.main-wrapper > .home > section.row > div.left-text-frame {
+    text-align: right;
+    margin-left: 10%;
+}
+.main-wrapper > .home > section.row > div.left-text-frame > .title {
+    text-align: left;
+    padding-top: 10rem;
+    margin-left: 20%
+}
+.main-wrapper > .home > section.row > div > .title > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+.main-wrapper > .home > section.row > div > .title > .sub-title {
+    margin-bottom: 2rem;
+}
+.main-wrapper > .home > section.row > div > .title > .sub-title > h2 {
+    color: #ffffff90;
+    font-weight: 500;
+}
+.main-wrapper > .home > section a {
+    display: flex;
+    align-items: center;
+
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.main-wrapper > .home > section.row > div.left-text-frame > .title > a:hover > p {
+    text-decoration: underline;
+}
+.main-wrapper > .home > section.row > div.left {
+    text-align: right;
+}
+.main-wrapper > .home > section.row > div.right-text-frame {
+    text-align: right;
+    margin-right: 10%;
+}
+.main-wrapper > .home > section.row > div.right-text-frame > .title {
+    padding-top: 10rem;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*
+    col
+*/
+.main-wrapper > .home > section.col {
+    text-align: center;
+}
+.main-wrapper > .home > section.col .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.main-wrapper > .home > section.col .title > h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff90;
+}
+.main-wrapper > .home > section.col > .image-row {
+    display: flex;
+    justify-content: center;
+}
+.main-wrapper > .home > section.col > .image-row > a {
+    
+}
+.main-wrapper > .home > section.col > .image-row > a > img {
+    width: 30rem;
+}

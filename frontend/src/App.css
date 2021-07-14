@@ -1,0 +1,59 @@
+footer {
+  background: #222;
+  padding: 5rem 0;
+  color: #ffffff90;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer > .SNS {
+  width: 80%;
+  margin-bottom: 2rem;
+
+}
+footer > .SNS > a {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+footer > .SNS > a > i {
+  font-size: 46px;
+  color: #ffffff;
+}
+footer > .map {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+footer > .map > div > ul {
+  padding-top: 0.7rem;
+  display: flex;
+}
+footer > .map > div > ul > li {
+  margin-right: 2rem;
+}
+footer > .map > div > ul > li > a {
+  color: #ffffff;
+  overflow: unset;
+  cursor: pointer;
+  white-space: pre;
+}
+footer > .map > div > ul > li > a:hover {
+  text-decoration: underline;
+}
+footer > .map > div:first-child {
+  margin-right: 3rem;
+}
+footer > address {
+  padding-top: 3rem;
+  width: 80%;
+}
+footer > address > img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+footer > address > h2 {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}

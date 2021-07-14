@@ -1,0 +1,8 @@
+main.profile {
+    min-height: 100%;
+    background: #000000;
+    color: #ffffff;
+}
+main.profile > header {
+    height: 100vh;
+}
