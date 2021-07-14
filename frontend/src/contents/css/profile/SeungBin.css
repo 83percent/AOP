@@ -1,0 +1,120 @@
+main.se {
+    overflow-x: hidden;
+}
+main.se > header {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main.se > header > .title {
+    z-index: 998;
+    text-align: center;
+}
+main.se > header > .title > div > h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+main.se > header > img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+main.se > section.history {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+main.se > section.history > div {
+    flex-basis: 25%;
+    width: 25%;
+    min-width: 25%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main.se > section.history > div h3 {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+main.se > section.history > div p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+}
+main.se > section.area {
+    display: flex;
+    padding: 8rem 0 3rem;
+    width: 70%;
+}
+main.se > section.area > div {
+    width: 50%;
+}
+main.se > section.area > div.right > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+main.se > section.area > div h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+main.se > section.area > div h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+}
+main.se > section.area > div p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2px;
+}
+main.se > section.area > div > img {
+    width: 40rem;
+}
+main.se > section.area > div a {
+    margin-top: 2rem;
+    color: #06c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+main.se > section.area > div a:hover > p {
+    text-decoration: underline;
+}
+main.se > section.sns {
+    text-align: center;
+    padding: 8rem 0;
+}
+main.se > section.sns > h1 {
+    font-size: 3.5rem;
+}
+main.se > section.sns > ul {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.se > section.sns > ul > li {
+    margin-left: 1rem;
+}
+main.se > section.sns > ul > li:first-child {
+    margin-left: 0;
+}
+main.se > section.sns a {
+    cursor: pointer;
+    
+}
+main.se > section.sns a > i {
+    font-size: 4rem;
+    color: #dd1818;
+}
+main.se > section.sns a > img {
+    width: 3.8rem;
+}

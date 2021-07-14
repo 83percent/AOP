@@ -9,7 +9,9 @@ import logo from './contents/logo/logo.png';
 import { createContext } from "react";
 import { Switch, Route } from "react-router-dom";
 
+// Component
 import MainRouter from "./router/MainRouter";
+import FreeRouter from "./router/FreeRouter";
 import HyeongSeong from "./component/Profile/HyeongSeong";
 import SeungBin from "./component/Profile/SeungBin";
 
@@ -17,17 +19,21 @@ export const ServerContext = createContext(null);
 
 function App() {
   const __server = 'http://localhost:3002';
+  
   return (
     <ServerContext.Provider value={__server}>
+        
         <Switch>
             <Route exact path="/" component={MainRouter} />
+            <Route path="/program" component={MainRouter} />
+            <Route path="/free" component={FreeRouter} />
             <Route path="/hyeongseong" component={HyeongSeong} />
             <Route path="/seungbin" component={SeungBin} />
         </Switch>
         <footer>
             <div className="SNS">
                 <a href="/">
-                    <i class='fab fa-instagram'></i>
+                    <i className='fab fa-instagram'></i>
                 </a>
             </div>
         
@@ -42,7 +48,7 @@ function App() {
                             <Link>스튜디오 시설</Link>
                         </li>
                         <li>
-                            <Link>프로그램</Link>
+                            <Link to="/program">프로그램</Link>
                         </li>
                         <li>
                             <Link>자주 묻는 질문</Link>
@@ -56,10 +62,10 @@ function App() {
                     <p>트레이너</p>
                     <ul>
                         <li>
-                            <Link>안승빈</Link>
+                            <Link to="/seungbin">안승빈</Link>
                         </li>
                         <li>
-                            <Link>전형성</Link>
+                            <Link to="/hyeongseong">전형성</Link>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +75,7 @@ function App() {
                 <p>에이오피</p>
                 <p>사업자 등록번호: 120-88-01280 | 대표: 안승빈</p>
                 <p>경기도 성남시 분당구 황새울로200번길 34 Ko Fo Mo 빌딩 205, 206호</p>
-                <h2 className="en">Copyright © AOP All Rights Reserved.</h2>
+                <h2 className="en">Copyright © AOP All Rights Reserved.<br/>Made By 83percent.</h2>
             </address>
         </footer>
     </ServerContext.Provider>

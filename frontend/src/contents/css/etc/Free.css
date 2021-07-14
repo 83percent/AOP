@@ -1,0 +1,68 @@
+article.free {
+    min-height: 100vh;
+}
+article.free > header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding-bottom: 8rem;
+}
+article.free > header > h1 {
+    padding-top: 8rem;
+    font-size: 4.0rem;
+}
+article.free > header > h1 > strong {
+    font-weight: 700;
+    color: #dd1818;
+}
+article.free > header > p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #000;
+}
+article.free > section.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article.free > section.faq li {
+    width: 50rem;
+    border-bottom: 2px solid #00000080;
+    padding: 1rem 0 0.5rem 0;
+    cursor: pointer;
+}
+article.free > section.faq li > div.title {
+    display: flex;
+    align-items: center;
+}
+article.free > section.faq li > div.title > h1 {
+    flex-grow: 1;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+article.free > section.faq li > div.title > i {
+    font-size: 2.5rem;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+}
+article.free > section.faq li.on > div.title > i {
+    transform: rotate(180deg);
+}
+article.free > section.faq li > div.answer {
+    height: 0rem;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    opacity: 0;
+    font-size: 1.1rem;
+}
+article.free > section.faq li.on > div.answer {
+    height: 5rem;
+    opacity: 1;
+}

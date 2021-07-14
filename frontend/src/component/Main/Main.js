@@ -27,7 +27,7 @@ const Main = () => {
                             <h2>진행되는 트레이닝.</h2>
                         </div>
                         
-                        <Link>
+                        <Link to="/program">
                             <p>프로그램 자세히보기</p>
                             <i className="material-icons">chevron_right</i>
                         </Link>

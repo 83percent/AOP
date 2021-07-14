@@ -1,0 +1,75 @@
+article.program > aside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17rem;
+    height: 100%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+article.program > aside > h1 {
+    margin-top: 2rem;
+    color: #ffffff;
+    opacity: 0.5    ;
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+}
+article.program > aside > a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    opacity: 0.5;
+    font-size: 2.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 2px ;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+article.program > aside > a > div {
+    border-radius: 50%;
+    background: #dd1818;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+article.program > aside > a:hover, article.program > aside > a.active {
+    opacity: 1;
+}
+article.program > aside > a > p {
+    color: #ffffff;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+}
+article.program > aside > a.active > p {
+}
+article.program > aside > a.active > div {
+    padding: 0.3rem;
+    margin-right: 1rem;
+}
+
+/*
+    main
+*/
+article.program > main {
+    width: 100%;
+    height: 100vh;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+article.program > main > * {
+    margin-left: 20rem;
+}
+article.program > main > header {
+    padding-top: 2rem;
+}
+article.program > main > header > h1 {
+    color: #ffffff;
+    font-size: 5.0rem;
+}

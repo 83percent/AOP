@@ -1,8 +1,36 @@
 main.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: tomato;
     min-height: 100%;
-    background: #000000;
-    color: #ffffff;
+    background: #ffffff;
 }
 main.profile > header {
     height: 100vh;
+}
+main.profile > nav {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    text-align: center;
+}
+main.profile > nav > div {
+    position: relative;
+    padding-bottom: 2rem;
+    top: 0;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+}
+main.profile > nav > div > a {
+    cursor: pointer;
+}
+main.profile > nav > div > a > img {
+    padding-top: 1rem;
+    width: 6rem;
 }

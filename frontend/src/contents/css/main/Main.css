@@ -1,7 +1,7 @@
 .main-wrapper {
     background-color: #000000;
     width: 100%;
-    min-height: 200%;
+    min-height: 100%;
 }
 .main-wrapper > nav.fixed-button {
     position: fixed;
@@ -12,7 +12,8 @@
     bottom: 0;
     z-index: 999;
 }
-.main-wrapper > nav.fixed-button > div {
+.main-wrapper > nav.fixed-button > div.btn {
+    z-index: 998;
     position: fixed;
     bottom: 1rem;
     width: 14rem;
@@ -28,17 +29,122 @@
     opacity: 0.6;
 }
 
-.main-wrapper > nav.fixed-button > div:hover, .main-wrapper > nav.fixed-button > div.on {
+.main-wrapper > nav.fixed-button > div.btn:hover, .main-wrapper > nav.fixed-button > div.btn.on {
     width: 27rem;
     bottom: 1.5rem;
     opacity: 1.0;
 }
-.main-wrapper > nav.fixed-button > div > button {
+.main-wrapper > nav.fixed-button > div.btn > button {
     all: unset;
     padding: 0 0.5rem;
     color: #ffffff;
     font-size: 1.3rem;
     font-weight: 500;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper {
+    position: fixed;
+    bottom: -100%;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition-duration: 0.7s;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper.on {
+    bottom: 0%;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dd1818;
+    border-radius: 50%;
+    padding: 0.6rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > button:hover {
+    opacity: 1;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > button > i {
+    color: #fff;
+    font-size: 2.0rem;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div {
+    border-radius: 18px 18px 0 0;
+    width: 36rem;
+    padding: 1.5rem;
+    background: #222;
+    border: 1px solid #333;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > a {
+    color: #06c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-left: 4px;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > a > p {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > a:hover > p {
+    text-decoration: underline;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > a > i {
+    position: relative;
+    top: -1px;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > button {
+    all: unset;
+    cursor: pointer;
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    background-color: #6d6767;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > p {
+    color: #ffffff90;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-left: 4px;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    background: #333;
+    padding: 0.8rem;
+    border-radius: 10px;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > div > p {
+    color: #fff;
+    margin-left: 4px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.main-wrapper > nav.fixed-button > div.form-wrapper > div > div > input {
+    all: unset;
+    margin-top: 4px;
+    padding: 0.3rem 0.5rem;
+    flex-grow: 1;
+    border-bottom: 3px solid #555;
+    color: #fff;
 }
 /*
     Home
