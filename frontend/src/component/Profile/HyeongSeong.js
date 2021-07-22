@@ -1,7 +1,7 @@
 
 // CSS
 import "../../contents/css/profile/Profile.css";
-import "../../contents/css/profile/SeungBin.css";
+import "../../contents/css/profile/HyeongSeong.css";
 
 
 // Image
@@ -18,7 +18,7 @@ const HyeongSeong = () => {
         window.scrollTo(0,0);
     });
     return (
-        <main className="profile se">
+        <main className="profile hy">
             <nav>
                 <div>
                     <Link to="/">
@@ -29,8 +29,8 @@ const HyeongSeong = () => {
             <header>
                 <div className="title">
                     <div className="name">
-                        <h1>"노력하지 않는자 먹지도 말라."</h1>
-                        <h1>전형성</h1>
+                        <h1>"마음이 변화하는 트레이닝을 드리고 싶습니다."</h1>
+                        <h2>전형성</h2>
                     </div>
                 </div>
             </header>
@@ -68,6 +68,8 @@ const HyeongSeong = () => {
                         <p>Fitt 측정평가사</p>
                         <p>ITC 통합적 위협조절 수료</p>
                         <p>잠백이카페 칼럼리스트 [10컷 트레이닝]</p>
+                        <p>가톨릭병원 NASM 교정운동학 수료</p>
+                        <p>경희대학교 무아컨퍼런스 운동학습 프리젠터</p>
                     </div>
                 </div>
             </section>
@@ -76,12 +78,12 @@ const HyeongSeong = () => {
                 <div>
                     <div>
                         <h2>전문분야</h2>
-                        <h1>바디 프로필</h1>
+                        <h1>기능성 트레이닝</h1>
                         <p>인생의 한 장을 빛낼 여러분을 만들어보세요.</p>
                         <p>촬영날짜에 고객님을 위한 맞춤 프로그램 및 식단 조절까지</p>
                         <p>전문가와 상담 후 완벽한 여러분을 만들 준비를 해보세요.</p>
-                        <Link>
-                            <p>바디 프로필 프로그램 더 알아보기</p>
+                        <Link to="/program/1">
+                            <p>기능성 트레이닝 더 알아보기</p>
                             <i className="material-icons">chevron_right</i>
                         </Link>
                     </div>
@@ -97,13 +99,13 @@ const HyeongSeong = () => {
                 <div className="right">
                     <div>
                         <h2>전문분야</h2>
-                        <h1>스포츠 마사지</h1>
+                        <h1>재활, 체형 교정 트레이닝</h1>
                         <p>운동은 마무리가 중요합니다.</p>
                         <p>자극이 가해진 근육을 풀어주지 않으면 운동은 </p>
                         <p>오히려 몸에 독이 될 수 있습니다.</p>
                         <p>마사지를 통해 근육을 풀어줘 운동 효과를 극대화해보세요.</p>
-                        <Link>
-                            <p>스포츠 마사지 더 알아보기</p>
+                        <Link to="/program/2">
+                            <p>재활, 체형 교정 트레이닝 더 알아보기</p>
                             <i className="material-icons">chevron_right</i>
                         </Link>
                     </div>
@@ -124,7 +126,6 @@ const HyeongSeong = () => {
                     </li>
                 </ul>
             </section>
-
         </main>
     )
 }

@@ -2,7 +2,7 @@ article.program > aside {
     position: absolute;
     top: 0;
     left: 0;
-    width: 17rem;
+    width: 22rem;
     height: 100%;
     padding-left: 2rem;
     display: flex;
@@ -21,7 +21,6 @@ article.program > aside > a {
     align-items: center;
     color: #ffffff;
     opacity: 0.5;
-    font-size: 2.7rem;
     font-weight: 700;
     cursor: pointer;
     margin-top: 2px ;
@@ -43,6 +42,7 @@ article.program > aside > a:hover, article.program > aside > a.active {
 }
 article.program > aside > a > p {
     color: #ffffff;
+    font-size: 2.3rem;
     transition-duration: 0.2s;
     -webkit-transition-duration: 0.2s;
     -moz-transition-duration: 0.2s;
@@ -61,15 +61,70 @@ article.program > aside > a.active > div {
 article.program > main {
     width: 100%;
     height: 100vh;
+    color: #ffffff;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
 }
 article.program > main > * {
-    margin-left: 20rem;
+    margin-left: 27rem;
 }
 article.program > main > header {
     padding-top: 2rem;
 }
 article.program > main > header > h1 {
-    color: #ffffff;
-    font-size: 5.0rem;
+    font-size: 4.3rem;
+}
+article.program > main > section.explain {
+    margin-top: 0.5rem;
+}
+article.program > main > section.explain > p {
+    font-size: 1.1rem;
+    margin-top: 3px;
+}
+article.program > main > section {
+    margin-top: 3rem;
+}
+article.program > main > section > h1 {
+    font-size: 2.3rem;
+}
+article.program > main > section.process > div {
+    display: flex;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+article.program > main > section.process > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 8rem;
+    padding: 1rem 1.5rem;
+    height: 10rem;
+    background: #ffffff20;
+    border-radius: 10px;
+}
+article.program > main > section.process > div > div > p {
+    font-size: 1.3rem;
+}
+article.program > main > section.process > div > i {
+    padding: 0 1rem;
+    font-size: 2.0rem;
+}
+article.program > main > section.recommand > div {
+    display: flex;
+    align-items: center;
+}
+article.program > main > section.recommand > h1 {
+    margin-bottom: 1rem;
+}
+article.program > main > section.recommand > div {
+    margin-top: 0.5rem;
+}
+article.program > main > section.recommand > div > .dot {
+    border-radius: 50%;
+    background: #dd1818;
+    margin-right: 1rem;
+    padding: 0.25rem;
+}
+article.program > main > section.recommand > div > p {
+    font-size: 1.3rem;
 }

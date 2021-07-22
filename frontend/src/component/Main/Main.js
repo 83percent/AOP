@@ -13,22 +13,21 @@ const Main = () => {
             <section className="col" style={{margin: "20rem 0"}}>
                 <div className="title">
                     <h1>여러분을 스튜디오로 초대합니다.</h1>
-                    <h2>저희 AOP는 Art Of Personal Training의 약자로</h2>
-                    <h2>여러분들의 건강을 위해 최선을 다합니다.</h2>
+                    <h2>삶의 변화를 약속하는 Art of Personal Training</h2>
                 </div>
             </section>
             <section className="row">
                 <div className="left-text-frame">
                     <div className="title">
-                        <h1>맞춤형 프로그램</h1>
+                        <h1>프로그램 소개</h1>
                         <div className="sub-title">
-                            <h2>몸에 맞지 않는 운동은 오히려 몸에 독이 됩니다.</h2>
-                            <h2>회원님에게 최적화된 맞춤형 프로그램으로</h2>
-                            <h2>진행되는 트레이닝.</h2>
+                            <h2>A to Z 퍼스널 트레이닝</h2>
+                            <h2>전문 코치진이 설계하여 정교한 운동 프로그램</h2>
+                            <h2>개개인의 생활패턴에 맞춘 식단</h2>
+                            <h2>고객의 목표를 성공으로 이끄는 멘탈 케어</h2>
                         </div>
-                        
                         <Link to="/program">
-                            <p>프로그램 자세히보기</p>
+                            <p>프로그램 더 알아보기</p>
                             <i className="material-icons">chevron_right</i>
                         </Link>
                     </div>

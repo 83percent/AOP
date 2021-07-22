@@ -27,8 +27,12 @@ const SeungBin = () => {
             <header>
                 <div className="title">
                     <div className="name">
-                        <h1>"노력하지 않는자 먹지도 말라."</h1>
-                        <h1>임승빈</h1>
+                        <h1>"</h1>
+                        <h1>정보가 넘쳐나는 시대입니다.</h1>
+                        <h1>진짜와 가짜가 뒤섞인 곳에서</h1>
+                        <h1>진짜배기 바디컨설팅과 트레이닝을 전해드리겠습니다.</h1>
+                        <h1>"</h1>
+                        <h2>임승빈</h2>
                     </div>
                 </div>
             </header>
@@ -67,7 +71,7 @@ const SeungBin = () => {
                 <div>
                     <div>
                         <h3>자격</h3>
-                        <p>미국체력협회 NSCA – CSCS</p>
+                        <p>미국 체력협회 NSCA – CSCS</p>
                         <p>응급처치 자격</p>
                         <p>스포츠 마사지 1급</p>
                         <p>체형관리사 1급</p>

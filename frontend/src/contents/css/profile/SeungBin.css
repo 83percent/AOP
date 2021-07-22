@@ -14,7 +14,11 @@ main.se > header > .title {
     text-align: center;
 }
 main.se > header > .title > div > h1 {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+main.se > header > .title > div > h2 {
+    font-size: 2.5rem;
     font-weight: 700;
 }
 main.se > header > img {

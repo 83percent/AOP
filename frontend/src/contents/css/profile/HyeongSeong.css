@@ -1,47 +1,125 @@
-main.hy > header {
-    display: flex;
-    width: 80%;
+main.hy {
+    overflow-x: hidden;
 }
-main.hy > header > div.text {
+main.hy > header {
+    height: 90vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1;
+    justify-content: center;
 }
-main.hy > header > div > div.title {
-    padding-top: 10rem;
+main.hy > header > .title {
+    z-index: 998;
+    text-align: center;
 }
-main.hy > header > div > div.title > .name {
-    display: flex;
-    align-items: flex-end;
-    flex-wrap: wrap;
-}
-main.hy > header > div > div.title > .name > h1 {
-    font-size: 3.9rem;
+main.hy > header > .title > div > h1 {
+    font-size: 3.7rem;
     font-weight: 700;
-    word-break: keep-all;
 }
-main.hy > header > div > div.title > .name > p {
-    position: relative;
-    top: -1.4rem;
-    padding-top: 0.7rem;
-    margin-left: 0.5rem;
-    color: #ccc;
-    font-size: 0.9rem;
+main.hy > header > .title > div > h2 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
 }
-main.hy > header > div > div.title > .history {
-    padding-top: 1rem;
+main.hy > header > img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
-main.hy > header > div > div.title > .history > p {
-    margin-top: 0.2rem;
+main.hy > section.history {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+main.hy > section.history > div {
+    flex-basis: 25%;
+    width: 25%;
+    min-width: 25%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main.hy > section.history > div h3 {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+main.hy > section.history > div p {
     font-size: 1.1rem;
     font-weight: 500;
-    word-break: keep-all;
+    margin-top: 0.2rem;
+}
+main.hy > section.area {
+    display: flex;
+    padding: 8rem 0 3rem;
+    width: 70%;
+}
+main.hy > section.area > div {
+    width: 50%;
+}
+main.hy > section.area > div.right > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 
+main.hy > section.area > div h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
 }
-main.hy > header > div > div.title > .history > div {
-    padding: 0.6rem 0;
+main.hy > section.area > div h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
 }
-main.hy > header > div > img {
-    height: 100vh;
+main.hy > section.area > div p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 2px;
+}
+main.hy > section.area > div > img {
+    width: 40rem;
+}
+main.hy > section.area > div a {
+    margin-top: 2rem;
+    color: #06c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+main.hy > section.area > div a:hover > p {
+    text-decoration: underline;
+}
+main.hy > section.sns {
+    text-align: center;
+    padding: 8rem 0;
+}
+main.hy > section.sns > h1 {
+    font-size: 3.5rem;
+}
+main.hy > section.sns > ul {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.hy > section.sns > ul > li {
+    margin-left: 1rem;
+}
+main.hy > section.sns > ul > li:first-child {
+    margin-left: 0;
+}
+main.hy > section.sns a {
+    cursor: pointer;
+    
+}
+main.hy > section.sns a > i {
+    font-size: 4rem;
+    color: #dd1818;
+}
+main.hy > section.sns a > img {
+    width: 3.8rem;
 }
