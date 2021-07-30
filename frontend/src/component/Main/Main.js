@@ -5,14 +5,12 @@ import Studio from './Studio';
 import Program from './Program';
 
 // Image
-import logo from '../../contents/logo/acp_white.png';
 
-import studio_3 from '../../contents/image/studio_3.jpg';
 import profile1 from '../../contents/image/profile1.jpg';
 import profile2 from '../../contents/image/profile2.jpg';
 
 // Video
-import mainVideo from '../../contents/video/main_video.mp4';
+import mainVideo from '../../contents/video/video_2.mp4';
 
 const Main = () => {
     return (
