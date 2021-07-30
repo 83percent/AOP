@@ -1,0 +1,54 @@
+.home > .post {
+    text-align: center;
+}
+.home > .post > h1 {
+    font-size: 3.8rem;
+}
+.home > .post > .container {
+    width: 100%;
+    background: #000;
+}
+.home > .post .container .slick-track {
+    display: flex;
+    align-items: center;
+}
+.home > .post .container button {
+    visibility: hidden;
+}
+.home > .post .slick-slider {
+    margin: 0 auto 50px;
+    width: auto;
+}
+.home > .post .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    margin: 15px;
+    height: 15rem;
+    border-radius: 0.3rem;
+    background: #88888830;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.25);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.home > .post .card h4 {
+    color: #a1a1a6;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+.home > .post .card p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 1023px) {
+    .home > .post .card {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+}

@@ -19,7 +19,6 @@ const Studio = () => {
                         <p>회원님에게 최고의 운동경험을 전하기 위하여</p>
                         <p>AOP는 언제나 최고의 시설을 제공합니다.</p>
                     </div>
-                    
                     <Link>
                         <p>시설 자세히보기</p>
                         <i className="material-icons">chevron_right</i>

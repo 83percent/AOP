@@ -1,0 +1,39 @@
+.home > section.trainer {
+    text-align: center;
+}
+.home > section.trainer .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.home > section.trainer .title > h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff90;
+}
+.home > section.trainer > .image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.home > section.trainer > .image > a {
+    
+}
+.home > section.trainer > .image > a > img {
+    width: 30rem;
+}
+
+@media (max-width: 1023px) {
+    .home > section.trainer > .image {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home > section.trainer > .image > a {
+        width: 90%;
+    }
+    .home > section.trainer > .image > a > img {
+        width: 100%;
+    }
+}

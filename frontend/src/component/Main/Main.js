@@ -1,13 +1,9 @@
-import { Link } from 'react-router-dom';
-
 // Component
 import Studio from './Studio';
 import Program from './Program';
-
-// Image
-
-import profile1 from '../../contents/image/profile1.jpg';
-import profile2 from '../../contents/image/profile2.jpg';
+import Trainer from './Trainer';
+import QnA from './QnA';
+import Post from './Post';
 
 // Video
 import mainVideo from '../../contents/video/video_2.mp4';
@@ -28,33 +24,9 @@ const Main = () => {
             </section>
             <Program />
             <Studio />
-            <section className="col"  style={{padding: "15rem 0"}}>
-                <div className="title">
-                    <h1>트레이너.</h1>
-                    <h2>이미지를 누르면 자세히 볼 수 있어요</h2>
-                </div>
-                <div className="image-row">
-                    <Link to="/seungbin">
-                        <img src={profile1} alt="profile" />
-                    </Link>
-                    <Link to="/hyeongseong">
-                        <img src={profile2} alt="profile" />
-                    </Link>
-                </div>
-            </section>
-            <section className="col">
-                <div className="title" style={{paddingBottom: "15rem"}}>
-                    <h1>더 궁금한게 있다면.</h1>
-                    <Link>
-                        <p>자주 묻는 질문</p>
-                        <i className="material-icons">chevron_right</i>
-                    </Link>
-                    <Link>
-                        <p>온라인 문의하기</p>
-                        <i className="material-icons">chevron_right</i>
-                    </Link>
-                </div>
-            </section>
+            <Trainer />
+            <Post />
+            <QnA />
         </article>
     )
 }
