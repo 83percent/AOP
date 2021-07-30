@@ -1,0 +1,100 @@
+.home > section.program {
+    display: flex;
+}
+.home > section.program > div {
+    max-width: 50%;
+    width: 50%;
+}
+.home > section.program > div.image-frame > img {
+    text-align: left;
+    height: 80vh;
+}
+.home > section.program > div.text-frame {
+    text-align: right;
+    margin-left: 10%;
+    background: rgb(0,0,0);
+    padding-bottom: 3rem;
+    z-index: 100;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 61%);
+    background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 61%);
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 61%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+}
+.home > section.program > div.text-frame > .title {
+    text-align: left;
+    padding-top: 10rem;
+    margin-left: 20%;
+    z-index: 100;
+}
+.home > section.program > div > .title > h1 {
+    font-size: 4.2rem;
+    margin-bottom: 0.5rem;
+    z-index: 100;
+
+}
+.home > section.program > div > .title > .sub-title {
+    margin-bottom: 2rem;
+    z-index: 100;
+}
+.home > section.program > div > .title > .sub-title > p {
+    color: #a1a1a6;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+}
+.home > section a {
+    display: flex;
+    align-items: center;
+
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.home > section.program > div.text-frame > .title > a:hover > p {
+    text-decoration: underline;
+}
+.home > section.program > div.left {
+    text-align: right;
+}
+
+@media (max-width: 1023px) {
+    .home > section.program {
+        position: relative;
+        flex-direction: column;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .home > section.program > div {
+        width: 100%;
+        max-width: 100%;
+    }
+    .home > section.program > div.text-frame {
+        margin: 0;
+        padding-left: 2rem;
+        padding-bottom: 23rem;
+    }
+    .home > section.program > div.text-frame > .title {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-left: 0;
+    }
+    .home > section.program > div.text-frame > .title > .sub-title {
+        margin-bottom: 1rem;
+    }
+    .home > section.program > div.text-frame > .title > .sub-title > p {
+        margin-bottom: 0;
+    }
+    .home > section.program > div.image-frame {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .home > section.program > div.image-frame > img {
+        width: 100%;
+        object-fit: cover;
+        height: 60vh;
+    }
+}

@@ -18,9 +18,9 @@ const FreeRouter = () => {
         <article className="free">
             <header>
                 <h1>먼저 <strong>체험</strong>해보고, <strong>등록</strong>하세요.</h1>
-                <p>등록한 뒤에 별로라서 환불하셨나요?</p>
+                <p>전에 받던 PT가 맘에 들지 않아 고민되신다구요?</p>
                 <p>고객님을 위해 준비한 1:1 맞춤 프로그램,</p>
-                <p>AOP에서는 먼저 체험해보고 등록하세요.</p>
+                <p>AOP에서 먼저 체험해보고 등록하세요.</p>
             </header>
             <section className="faq">
                 <ul>

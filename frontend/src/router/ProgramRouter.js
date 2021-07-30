@@ -16,17 +16,17 @@ const ProgramRouter = () => {
         <article className="program">
             <aside>
                 <h1>프로그램</h1>
+                <NavLink to="/program/3" replace>
+                    <div></div>
+                    <p>웨이트 트레이닝</p>
+                </NavLink>
                 <NavLink to="/program/1" replace>
                     <div></div>
                     <p>기능성 트레이닝</p>
                 </NavLink>
                 <NavLink to="/program/2" replace>
                     <div></div>
-                    <p>재활 트레이닝</p>
-                </NavLink>
-                <NavLink to="/program/3" replace>
-                    <div></div>
-                    <p>근력, 근육량 증가 트레이닝</p>
+                    <p>재활, 체형 교정 트레이닝</p>
                 </NavLink>
                 <NavLink to="/program/4" replace>
                     <div></div>

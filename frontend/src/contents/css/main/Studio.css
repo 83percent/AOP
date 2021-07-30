@@ -1,0 +1,87 @@
+.home > section.studio {
+    display: flex;
+}
+.home > section.studio > div {
+    max-width: 50%;
+    width: 50%;
+}
+.home > section.studio > div > img {
+    height: 80vh;
+}
+.home > section.studio > div.right > img {
+    text-align: left;
+}
+.home > section.studio > div > .title > h1 {
+    font-size: 4.2rem;
+    margin-bottom: 0.5rem;
+}
+.home > section.studio > div > .title > .sub-title {
+    margin-bottom: 2rem;
+}
+.home > section.studio > div > .title > .sub-title > p {
+    color: #a1a1a6;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.home > section a {
+    display: flex;
+    align-items: center;
+
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.home > section.studio > div.image {
+    text-align: right;
+}
+.home > section.studio > div.text-frame {
+    text-align: right;
+    margin-right: 10%;
+}
+.home > section.studio > div.text-frame > .title {
+    padding-top: 10rem;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+@media (max-width: 1023px) {
+    .home > section.studio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+    .home > section.studio > div.text-frame {
+        width: 100%;
+        max-width: 100%;
+        background: rgb(0,0,0);
+        background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 46%);
+        background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 46%);
+        background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 46%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+        margin-right: 0;
+        z-index: 100;
+    }
+    .home > section.studio > div.text-frame > .title {
+        margin-right: 2rem;
+        padding-bottom: 12rem;
+    }
+    .home > section.studio > div.text-frame > .title > .sub-title {
+        margin-bottom: 1rem;
+        z-index: 100;
+    }
+
+    .home > section.studio > div.image {
+        width: 100vw;
+        max-width: 100vw;
+        position: absolute;
+        bottom: 0;
+    }
+    .home > section.studio > div.image > img {
+        width: auto;
+        object-fit: contain;
+    }
+}

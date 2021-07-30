@@ -1,4 +1,4 @@
-import MainImage from '../../contents/image/home_background.jpg';
+import MainImage from '../../contents/image/diet.jpg';
 
 const Program1 = () => {
     return (
@@ -42,17 +42,7 @@ const Program1 = () => {
                     </div>
                 </div>
             </section>
-            <section className="recommand">
-                <h1>이런 분들에게 추천해요.</h1>
-                <div>
-                    <div className="dot"></div>
-                    <p>골프 비거리를 늘리고 싶은 분</p>
-                </div>
-                <div>
-                    <div className="dot"></div>
-                    <p>기본적인 운동능력을 향상 시키고 싶은 분</p>
-                </div>
-            </section>
+            
         </main>
     )
 }
