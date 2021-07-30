@@ -1,8 +1,13 @@
+import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 // CSS
 import '../contents/css/etc/Free.css';
 
 const FreeRouter = () => {
+    // Ref
+    const botNav = useRef(null);
+    const inputNav = useRef(null);
     const event = {
         faqToggle : function(target) {
             for(let i=0; i<4; i++) {
@@ -12,10 +17,68 @@ const FreeRouter = () => {
             }
             if(target.nodeName !== "LI") return;
             target.classList.toggle("on");
+        },
+        toggleInput : function(bool) {
+            console.log(bool)
+            if(inputNav.current !== null) {
+                if(bool !== undefined) inputNav.current.classList.toggle("on");
+                else inputNav.current.classList.toggle("on", bool);
+            }
         }
     }
+    useEffect(() => {
+        window.addEventListener('scroll', function(e) {
+            if(this.scrollY < 100 && botNav.current) {
+                try {
+                    botNav.current.classList.add("on");
+                } catch{}
+                
+            } else {
+                try {
+                    botNav.current.classList.remove("on");
+                } catch{}
+            }
+        });
+    }, []);
+    useEffect(() => {
+        window.scrollTo(0,0);
+    });
     return (
         <article className="free">
+            <nav className="fixed-button">
+                <div ref={botNav} className="on btn" onClick={() => event.toggleInput(true)}>
+                    <button>1:1 PT 무료 체험하기</button>
+                </div>
+                <div ref={inputNav} className="form-wrapper">
+                    <button onClick={() => event.toggleInput(false)}>
+                        <i className="material-icons">close</i>
+                    </button>
+                    <div>
+                        <div>
+                            <p>이름</p>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <p>전화번호</p>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <p>운동목적</p>
+                            <input type="text" />
+                        </div>
+                        <div>
+                            <p>요구사항</p>
+                            <input type="text" />
+                        </div>
+                        <p>입력하신 정보는 상담을 위한 정보로, 상담이 종료되는 시점에 바로 파기됩니다.</p>
+                        <button>무료 체험 신청</button>
+                        <Link to="/free">
+                            <p>무료 체험 더 알아보기</p>
+                            <i className="material-icons">chevron_right</i>
+                        </Link>
+                    </div>
+                </div>
+            </nav>
             <header>
                 <h1>먼저 <strong>체험</strong>해보고, <strong>등록</strong>하세요.</h1>
                 <p>전에 받던 PT가 맘에 들지 않아 고민되신다구요?</p>
@@ -30,7 +93,7 @@ const FreeRouter = () => {
                             <i className="material-icons">keyboard_arrow_down</i>
                         </div>
                         <div className="answer">
-                            <p>아래 신청 양식에 맞게 이름, 전화번호, 운동목적, 요구사항을 작성한 뒤 '신청'을 눌러주시면 됩니다.</p>
+                            <p>양식에 맞게 이름, 전화번호, 운동목적, 요구사항을 작성한 뒤 '신청'을 눌러주시면 됩니다.</p>
                             
                         </div>
                     </li>

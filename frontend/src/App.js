@@ -15,6 +15,7 @@ import FreeRouter from "./router/FreeRouter";
 import HyeongSeong from "./component/Profile/HyeongSeong";
 import SeungBin from "./component/Profile/SeungBin";
 
+import ScrollToTop from "./router/ScrollTop";
 export const ServerContext = createContext(null);
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
   
   return (
     <ServerContext.Provider value={__server}>
-        
+        <ScrollToTop />
         <Switch>
             <Route exact path="/" component={MainRouter} />
             <Route path="/program" component={MainRouter} />
@@ -41,9 +42,6 @@ function App() {
                 <div>
                     <p>사이트 맵</p>
                     <ul>
-                        <li>
-                            <Link>스튜디오 소개</Link>
-                        </li>
                         <li>
                             <Link>스튜디오 시설</Link>
                         </li>

@@ -1,5 +1,6 @@
 .home > .post {
     text-align: center;
+    padding: 5rem 0;
 }
 .home > .post > h1 {
     font-size: 3.8rem;

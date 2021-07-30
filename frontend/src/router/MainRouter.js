@@ -27,7 +27,6 @@ const MainRouter = () => {
     }, []);
     const event = {
         toggleInput : function(bool) {
-            console.log(bool)
             if(inputNav.current !== null) {
                 if(bool !== undefined) inputNav.current.classList.toggle("on");
                 else inputNav.current.classList.toggle("on", bool);
@@ -35,7 +34,7 @@ const MainRouter = () => {
         }
     }
     useEffect(() => {
-        //window.scrollTo(0,0);
+        window.scrollTo(0,0);
     });
     return (
         <div className="main-wrapper">

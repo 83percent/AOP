@@ -4,6 +4,7 @@ import Program from './Program';
 import Trainer from './Trainer';
 import QnA from './QnA';
 import Post from './Post';
+import Map from './Map';
 
 // Video
 import mainVideo from '../../contents/video/video_2.mp4';
@@ -26,6 +27,7 @@ const Main = () => {
             <Studio />
             <Trainer />
             <Post />
+            <Map />
             <QnA />
         </article>
     )

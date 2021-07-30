@@ -1,0 +1,71 @@
+.home > section.map {
+    text-align: center;
+    height: 70vh;
+}
+
+.home > section.map > .title {
+
+}
+.home > section.map > .title > h1 {
+    font-size: 3.5rem;
+}
+.home > section.map > .title > p {
+    color: #a1a1a6;
+    font-size: 1.1rem;
+}
+.home > section.map > .map-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home > section.map > .map-wrapper > div {
+    width: 640px;
+    height: 392px;
+    color: #333;
+    position: relative;
+}
+.home > section.map > .map-wrapper > div > .map-frame {
+    height: 22.5rem;
+}
+.home > section.map > .map-wrapper > div > .map-frame > a > img {
+    width: 40rem;
+    height: 22.3rem;
+    border: 1px solid #ccc;
+}
+.home > section.map > .map-wrapper > div > .map-footer {
+    overflow: hidden;
+    padding: 0.4rem 0.68rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 2px 2px;
+    background: rgb(249, 249, 249);
+}
+.home > section.map > .map-wrapper > div > .map-footer > a {
+    float: left;
+}
+.home > section.map > .map-wrapper > div > .map-footer > a > img {
+    width: 4.5rem;
+    height: 1rem;
+    display: block;
+}
+.home > section.map > .map-wrapper > div > .map-footer > div {
+    float: right;
+    position: relative;
+    top: 1px;
+    font-size: 0.68rem;
+}
+.home > section.map > .map-wrapper > div > .map-footer > div > a {
+    float: left;
+    height: 0.93rem;
+    padding-top: 1px;
+    line-height: 0.93rem;
+    color: #000;
+    text-decoration: none;
+}
+@media (max-width: 1023px) {
+    .home > section.map > .map-wrapper > div {
+        width: 92%;
+    }
+    .home > section.map > .map-wrapper > div > .map-frame > a > img {
+        width: 100%;   
+    }
+}

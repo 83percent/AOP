@@ -116,7 +116,7 @@
     color: #fff;
     border-radius: 8px;
     width: 100%;
-    background-color: #6d6767;
+    background-color: #dd1818;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
@@ -239,6 +239,43 @@
         font-size: 3.0rem;
     }
     .home > .main-title > .title > p {
+        font-size: 1.3rem;
+    }
+    .main-wrapper > nav.fixed-button > div.btn {
+        padding: 1rem 0.7rem;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper {
+
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > div > div > p {
+        font-size: 1.1rem;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > button {
+        opacity: 1;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > div > button {
+        width: 95%;
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > div > div {
+        margin: 1rem 0.5rem;
+        width: 90%;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > div > div > input {
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 0.5rem;
+    }
+    .main-wrapper > nav.fixed-button > div.form-wrapper > div > a > p {
+        font-weight: 700;
         font-size: 1.3rem;
     }
 }
