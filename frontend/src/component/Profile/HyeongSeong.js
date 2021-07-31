@@ -36,7 +36,7 @@ const HyeongSeong = () => {
     return (
         <main className="profile hy">
             <div className="image-scale" ref={scaleRef} onClick={() => imageScale(false)}>
-                <img src={scaleImage} alt="scale image" />
+                <img src={scaleImage} alt="Profile Scale" />
             </div>
             <nav>
                 <div>
