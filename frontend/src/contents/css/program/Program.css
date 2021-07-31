@@ -52,8 +52,6 @@ article.program > aside > a > p {
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
 }
-article.program > aside > a.active > p {
-}
 article.program > aside > a.active > div {
     padding: 0.3rem;
     margin-right: 1rem;

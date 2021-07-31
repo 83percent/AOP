@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 // CSS
 import "../../contents/css/profile/Profile.css";
@@ -6,19 +8,36 @@ import "../../contents/css/profile/HyeongSeong.css";
 
 // Image
 import Logo from "../../contents/logo/acp_black.png";
-import Image1 from "../../contents/image/profile1_1.jpg";
-import Massage from "../../contents/image/massage.jpg";
-import BodyProfile from "../../contents/image/home_background.jpg";
+
+// hy
+import hy1 from "../../contents/image/hy1.jpg";
+import hy2 from "../../contents/image/hy2.jpg";
+import hy3 from "../../contents/image/hy3.jpg";
+import hy4 from "../../contents/image/hy4.jpg";
+import hy5 from "../../contents/image/hy5.jpg";
+import hy6 from "../../contents/image/hy6.jpg";
+
 import BlogIcon from "../../contents/icons/blog.png";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const HyeongSeong = () => {
+    const [scaleImage, setScaleImage] = useState(null);
+    const scaleRef = useRef(null);
+    function imageScale(toggle, image) {
+        if(toggle) {
+            setScaleImage(image);
+            scaleRef.current.classList.add("on");
+        } else {
+            scaleRef.current.classList.remove("on");
+        }
+    }    
     useEffect(() => {
         window.scrollTo(0,0);
-    });
+    }, []);
     return (
         <main className="profile hy">
+            <div className="image-scale" ref={scaleRef} onClick={() => imageScale(false)}>
+                <img src={scaleImage} alt="scale image" />
+            </div>
             <nav>
                 <div>
                     <Link to="/">
@@ -35,34 +54,30 @@ const HyeongSeong = () => {
                 </div>
             </header>
             <section className="history">
-                <div>
-                    <div>
-
+                <ul>
+                    <li>
                         <h3>이력</h3>
                         <p>경희대학교 스포츠지도학과</p>
                         <p>수원공업고등학교 보디빌딩부</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
+                    </li>
+                
+                    <li>
                         <h3>수상</h3>
                         <p>2013 전국체전 +75kg 1위</p>
                         <p>2013 전국ymca보디빌딩대회 –80 1위</p>
                         <p>2013 전국고교보디빌딩대회 –80 1위</p>
                         <p>2012 미스터경기 –80kg 1위</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
+                    </li>
+                
+                    <li>
                         <h3>경력</h3>
                         <p>전 스킬업 휘트니스 퍼스널 트레이너</p>
                         <p>전 더원운동과학센터 퍼스널 트레이너</p>
                         <p>전 신라 호텔 퍼스널 트레이너</p>
                         <p>전 근본퍼스널트레이닝 퍼스널 트레이너</p>
-                    </div>
-                </div>
-                <div>
-                    <div>
+                    </li>
+                
+                    <li>
                         <h3>자격</h3>
                         <p>생활스포츠지도사 2급</p>
                         <p>Fitt 측정평가사</p>
@@ -70,45 +85,58 @@ const HyeongSeong = () => {
                         <p>잠백이카페 칼럼리스트 [10컷 트레이닝]</p>
                         <p>가톨릭병원 NASM 교정운동학 수료</p>
                         <p>경희대학교 무아컨퍼런스 운동학습 프리젠터</p>
+                    </li>
+                </ul>
+            </section>
+            <section className="image-wrapper">
+                <div>
+                    <ul>
+                        <li className="main-image">
+                            <img src={hy1} alt="Profile 1" onClick={() => imageScale(true, hy1)}/>
+                        </li>
+                        <li className="sub-image">
+                            <img src={hy2} alt="Profile 2" onClick={() => imageScale(true, hy2)}/>
+                            <img src={hy3} alt="Profile 3" onClick={() => imageScale(true, hy3)}/>
+                        </li>
+                    </ul>
+                    <div className="sub-image">
+                        <img src={hy4} alt="Profile 4" onClick={() => imageScale(true, hy4)}/>
+                        <img src={hy6} alt="Profile 6" onClick={() => imageScale(true, hy6)}/>
+                        <img src={hy5} alt="Profile 5" onClick={() => imageScale(true, hy5)}/>
                     </div>
                 </div>
             </section>
-            <img src={Image1} alt="shot" />
-            <section className="area">
+            <section className="area left">
                 <div>
-                    <div>
-                        <h2>전문분야</h2>
-                        <h1>기능성 트레이닝</h1>
-                        <p>인생의 한 장을 빛낼 여러분을 만들어보세요.</p>
-                        <p>촬영날짜에 고객님을 위한 맞춤 프로그램 및 식단 조절까지</p>
-                        <p>전문가와 상담 후 완벽한 여러분을 만들 준비를 해보세요.</p>
-                        <Link to="/program/1">
-                            <p>기능성 트레이닝 더 알아보기</p>
-                            <i className="material-icons">chevron_right</i>
-                        </Link>
-                    </div>
-                </div>
-                <div>
-                    <img src={BodyProfile} alt="BodyProfile" />
+                    <h2>전문분야</h2>
+                    <h1>기능성 트레이닝</h1>
+                    <p>운동 능력 향상과 부상 방지를 위한 효과적인 프로그램을 제공하기 위해서 해당 스포츠만의 특별한 움직임을 분석 후 고객에게 알맞은 프로그램을 계획합니다</p>
+                    <Link to="/program/1">
+                        <p>기능성 트레이닝 더 알아보기</p>
+                        <i className="material-icons">chevron_right</i>
+                    </Link>
                 </div>
             </section>
-            <section className="area">
+            <section className="area right">
                 <div>
-                    <img src={Massage} alt="Massage" />
+                    <h2>전문분야</h2>
+                    <h1>재활, 체형 교정 트레이닝</h1>
+                    <p>재활프로그램은 움직임으로 인한 위험 민감 군에 속하는 고객들을 대상으로 적용되는 트레이닝인 만큼 스포츠의학 지식을 기반으로 전문 트레이너가 섬세한 프로그램을 제공합니다.</p>
+                    <Link to="/program/2">
+                        <p>재활, 체형 교정 트레이닝 더 알아보기</p>
+                        <i className="material-icons">chevron_right</i>
+                    </Link>
                 </div>
-                <div className="right">
-                    <div>
-                        <h2>전문분야</h2>
-                        <h1>재활, 체형 교정 트레이닝</h1>
-                        <p>운동은 마무리가 중요합니다.</p>
-                        <p>자극이 가해진 근육을 풀어주지 않으면 운동은 </p>
-                        <p>오히려 몸에 독이 될 수 있습니다.</p>
-                        <p>마사지를 통해 근육을 풀어줘 운동 효과를 극대화해보세요.</p>
-                        <Link to="/program/2">
-                            <p>재활, 체형 교정 트레이닝 더 알아보기</p>
-                            <i className="material-icons">chevron_right</i>
-                        </Link>
-                    </div>
+            </section>
+            <section className="area left">
+                <div>
+                    <h2>전문분야</h2>
+                    <h1>다이어트</h1>
+                    <p>지속가능성이 중요한 다이어트 프로그램인 만큼 트레이너와 회원과의 긴밀한 커뮤니케이션을 유지하여 식단과 개인 운동 프로그램을 체크하고 정체기에 빠지지 않게 하기 위해서 간헐적으로 새로운 운동 프로그램을 갱신합니다. </p>
+                    <Link to="/program/4">
+                        <p>다이어트 더 알아보기</p>
+                        <i className="material-icons">chevron_right</i>
+                    </Link>
                 </div>
             </section>
             <section className="sns">
