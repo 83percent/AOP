@@ -1,0 +1,46 @@
+article#studio {
+    background: #fff;
+    min-height: 100vh;
+    /* background-image: url("../../image/"); */
+}
+#studio > .container {
+    width: 100%;
+    background: #fff;
+}
+#studio > .container .slick-track {
+    display: flex;
+    align-items: center;
+}
+#studio > .container button.slick-arrow {
+    visibility: hidden;
+}
+#studio .slick-slider {
+    margin: 0 auto 50px;
+    width: auto;
+}
+#studio .card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    position: relative;
+    margin: 15px;
+    height: 15rem;
+    border-radius: 0.3rem;
+    background: #88888830;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.25);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+#studio .card h4 {
+    color: #a1a1a6;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+#studio .card p {
+    color: #ffffff;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}

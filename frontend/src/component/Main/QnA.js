@@ -9,11 +9,11 @@ const QnA = () => {
             <div className="title">
                 <h1>더 궁금한게 있다면.</h1>
             </div>
-            <Link>
+            <Link to="/faq">
                 <p>자주 묻는 질문</p>
                 <i className="material-icons">chevron_right</i>
             </Link>
-            <Link>
+            <Link to="/help">
                 <p>온라인 문의하기</p>
                 <i className="material-icons">chevron_right</i>
             </Link>

@@ -1,0 +1,141 @@
+article#faq {
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+    -webkit-tap-highlight-color : #00000000;
+}
+article#faq > .logo {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+article#faq > .logo > a {
+    height: 10rem;
+    cursor: pointer;
+}
+article#faq > .logo > a > img {
+    width: 6vw;
+}
+article#faq > .title {
+    width: 100%;
+    padding-top: 3rem;
+    text-align: center;
+}
+article#faq > .title > h1 {
+    font-size: 4.0rem;
+    color: #ffffff;
+}
+#faq > section.faq-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#faq > section.faq-frame > ul {
+    padding: 3rem 0 2rem 0;
+}
+#faq > section.faq-frame li {
+    width: 50rem;
+    border-bottom: 2px solid #ffffff80;
+    padding: 1rem 0 0.5rem 0;
+    cursor: pointer;
+}
+#faq > section.faq-frame li > div.title {
+    display: flex;
+    align-items: center;
+}
+#faq > section.faq-frame li > div.title > h1 {
+    flex-grow: 1;
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+}
+#faq > section.faq-frame li.on > div.title > h1 {
+    color: #dd1818;
+}
+#faq > section.faq-frame li > div.title > i {
+    font-size: 2.5rem;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+}
+#faq > section.faq-frame li.on > div.title > i {
+    transform: rotate(180deg);
+    color: #dd1818;
+}
+#faq > section.faq-frame li > div.answer {
+    height: 0rem;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    opacity: 0;
+    font-size: 1.1rem;
+}
+#faq > section.faq-frame li.on > div.answer {
+    height: 5rem;
+    opacity: 1;
+}
+
+article#faq > .help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+article#faq > .help > h1 {
+    font-size: 2.5rem;
+}
+article#faq > .help > a {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    color: #06c;
+    cursor: pointer;
+}
+article#faq > .help > a > p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+article#faq > .help > a > i {
+    position: relative;
+    top: -1px;
+}
+
+@media (max-width: 1023px) {
+    article#faq > .logo {
+        padding: 2rem 2rem;
+    }
+    article#faq > .logo > a > img {
+        width: 18vw
+    }
+    article#faq > .title > h1 {
+        font-size: 3.5rem;
+    }
+    article#faq > .help > a {
+        margin-top: 1rem;
+    }
+    #faq > section.faq-frame > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #faq > section.faq-frame li {
+        width: 90%;
+    }
+    #faq > section.faq-frame li > div.title > h1 {
+        font-size: 1.4rem;
+        margin-right: 0.5rem;
+    }
+    #faq > section.faq-frame li.on > div.answer {
+        height: 7.2rem;
+    }
+    
+    #faq > section.faq-frame li > div.answer > p {
+        font-size: 1.2rem;
+    }
+}

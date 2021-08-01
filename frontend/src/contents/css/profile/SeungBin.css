@@ -27,12 +27,15 @@ main.se > header > img {
     bottom: 0;
 }
 main.se > section.history {
-    width: 80%;
+    width: 100%;    
+}
+main.se > section.history > ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-bottom: 5rem;
 }
-main.se > section.history > div {
+main.se > section.history > ul > li {
     flex-basis: 25%;
     width: 25%;
     min-width: 25%;
@@ -41,43 +44,55 @@ main.se > section.history > div {
     flex-direction: column;
     align-items: center;
 }
-main.se > section.history > div h3 {
+main.se > section.history > ul > li >  h3 {
     font-size: 2.3rem;
     font-weight: 800;
 }
-main.se > section.history > div p {
+main.se > section.history > ul > li > p {
     font-size: 1.1rem;
     font-weight: 500;
     margin-top: 0.2rem;
 }
 main.se > section.area {
     display: flex;
-    padding: 8rem 0 3rem;
+    padding: 5rem 0;
     width: 70%;
 }
-main.se > section.area > div {
-    width: 50%;
-}
-main.se > section.area > div.right > div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+
+main.se > section.area.right {
+    justify-content: flex-end;
 }
 
-main.se > section.area > div h1 {
+main.se > section.area > div > h1 {
     font-size: 3.5rem;
     font-weight: 700;
+
 }
-main.se > section.area > div h2 {
+main.se > section.area > div > h2 {
     font-size: 1.6rem;
     font-weight: 700;
     position: relative;
-    top: 0.5rem;
+    top: 0.2rem;
+    opacity: 0.7;
+}
+main.se > section.area > div {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+main.se > section.area.left > div {
+    align-items: flex-start;
+    text-align: left;
+
+}
+main.se > section.area.right > div {
+    align-items: flex-end;
+    text-align: right;
 }
 main.se > section.area > div p {
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-top: 2px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
 }
 main.se > section.area > div > img {
     width: 40rem;
@@ -121,4 +136,35 @@ main.se > section.sns a > i {
 }
 main.se > section.sns a > img {
     width: 3.8rem;
+}
+
+@media (max-width: 1023px) {
+    main.se > header > .title {
+        width: 90vw;
+    }
+    main.se > section.history {
+        width: 92vw;
+    }
+    main.se > section.history > ul {
+        width: 92vw;
+    }
+    main.se > section.history > ul > li {
+        text-align: center;
+        width: 40vw;
+        flex-basis: unset;
+        min-width: unset;
+        margin-bottom: 3rem;
+    }
+    main.se > img {
+        object-fit: cover;
+        width: 100vw;
+    };
+    main.se > section.area {
+        width: 85vw;
+        padding: 3rem 0;
+    }
+    main.se > section.area > div {
+        width: 100%;
+        
+    }
 }

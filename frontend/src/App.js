@@ -12,6 +12,8 @@ import { Switch, Route } from "react-router-dom";
 // Component
 import MainRouter from "./router/MainRouter";
 import FreeRouter from "./router/FreeRouter";
+import StudioRouter from "./router/StudioRouter";
+import HelpRouter from "./router/HelpRouter";
 import HyeongSeong from "./component/Profile/HyeongSeong";
 import SeungBin from "./component/Profile/SeungBin";
 
@@ -27,7 +29,9 @@ function App() {
         <Switch>
             <Route exact path="/" component={MainRouter} />
             <Route path="/program" component={MainRouter} />
+            <Route path="/studio" component={StudioRouter} />
             <Route path="/free" component={FreeRouter} />
+            <Route path={["/help","/faq"]} component={HelpRouter} />
             <Route path="/hyeongseong" component={HyeongSeong} />
             <Route path="/seungbin" component={SeungBin} />
         </Switch>
@@ -43,16 +47,16 @@ function App() {
                     <p>사이트 맵</p>
                     <ul>
                         <li>
-                            <Link>스튜디오 시설</Link>
+                            <Link to="/studio">스튜디오 시설</Link>
                         </li>
                         <li>
                             <Link to="/program">프로그램</Link>
                         </li>
                         <li>
-                            <Link>자주 묻는 질문</Link>
+                            <Link to="/faq">자주 묻는 질문</Link>
                         </li>
                         <li>
-                            <Link>문의하기</Link>
+                            <Link to="/help">문의하기</Link>
                         </li>
                     </ul>
                 </div>

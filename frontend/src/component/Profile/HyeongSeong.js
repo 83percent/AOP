@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from "react";
 import "../../contents/css/profile/Profile.css";
 import "../../contents/css/profile/HyeongSeong.css";
 
-
 // Image
 import Logo from "../../contents/logo/acp_black.png";
 
@@ -60,7 +59,6 @@ const HyeongSeong = () => {
                         <p>경희대학교 스포츠지도학과</p>
                         <p>수원공업고등학교 보디빌딩부</p>
                     </li>
-                
                     <li>
                         <h3>수상</h3>
                         <p>2013 전국체전 +75kg 1위</p>
@@ -68,7 +66,6 @@ const HyeongSeong = () => {
                         <p>2013 전국고교보디빌딩대회 –80 1위</p>
                         <p>2012 미스터경기 –80kg 1위</p>
                     </li>
-                
                     <li>
                         <h3>경력</h3>
                         <p>전 스킬업 휘트니스 퍼스널 트레이너</p>
@@ -76,7 +73,6 @@ const HyeongSeong = () => {
                         <p>전 신라 호텔 퍼스널 트레이너</p>
                         <p>전 근본퍼스널트레이닝 퍼스널 트레이너</p>
                     </li>
-                
                     <li>
                         <h3>자격</h3>
                         <p>생활스포츠지도사 2급</p>

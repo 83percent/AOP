@@ -10,7 +10,7 @@ const Trainer = () => {
     return (
         <section className="trainer"  style={{padding: "15rem 0"}}>
             <div className="title">
-                <h1>트레이너.</h1>
+                <h1>트레이너</h1>
                 <h2>이미지를 눌러 트레이너의 프로필을 확인해보세요.</h2>
             </div>
             <div className="image">

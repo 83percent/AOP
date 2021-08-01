@@ -243,6 +243,11 @@
     }
     .main-wrapper > nav.fixed-button > div.btn {
         padding: 1rem 0.7rem;
+        bottom: 2rem;
+    }
+    
+    .main-wrapper > nav.fixed-button > div.btn:hover, .main-wrapper > nav.fixed-button > div.btn.on {
+        bottom: 3rem;
     }
     .main-wrapper > nav.fixed-button > div.form-wrapper > div {
         width: 100%;
