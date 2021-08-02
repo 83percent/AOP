@@ -1,5 +1,218 @@
-article#QnA {
+article#qna {
     min-height: 100vh;
-    background: #000000;
+    background-color: #000;
+    color: #fff;
+    -webkit-tap-highlight-color : #00000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+article#qna > .logo {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+article#qna > .logo > a {
+    height: 10rem;
+    cursor: pointer;
+}
+article#qna > .logo > a > img {
+    width: 6vw;
+}
+article#qna > .title {
+    width: 100%;
+    padding-top: 3rem;
+    text-align: center;
+}
+article#qna > .title > h1 {
+    font-size: 4.0rem;
+    color: #ffffff;
+}
+#qna > .talk {
+    text-align: center;
+    font-size: 1.2rem;
+}
+#qna > .talk > a > img {
+    margin-top: 2rem;
+    width: 4rem;
+    cursor: pointer;
+}
+/*
+    table
+*/
+#qna > .table {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#qna > .table > table {
+    border-collapse: collapse;
+}
+table, th, td {
+    text-align: center;
+}
+#qna > .table > table tr {
+    height: 2.5rem;
+}
+#qna > .table > table thead > tr > th {
+    border-bottom: 1px solid #fff;
+}
+#qna > .table > table .no {
+    width: 3rem;
+    padding-right: 2rem;
+}
+#qna > .table > table tbody > tr {
+    cursor: pointer;
+    height: 3.5rem;
+    border-bottom: 1px solid #ffffff40;
+}
+#qna > .table > table .title {
+    max-width: 40rem;
+    width: 40rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#qna > .table > table .name {
+    max-width: 9rem;
+    width: 9rem;
+    min-width: 9rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#qna > .table > table tbody .title {
+    text-align: left;
+}
+#qna > .table > .search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+}
+#qna > .table > .search > input {
+    all: unset;
+    border: 1px solid #ffffff40;
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-right: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    width: 15rem;
+}
+#qna > .table > .search > button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-color: #dd1818;
+    opacity: 0.6;
+}
+#qna > .table > .more {
+    text-align: center;
+    margin-top: 1rem;
+}
+#qna > .table > .more > button {
+    all: unset;
+    cursor: pointer;
+
+}
+#qna > .table > .more > button:hover {
+    text-decoration: underline;
+}
+#qna > .table > .btn {
+    text-align: right;
+    margin-top: 1rem;
+}
+#qna > .table > .btn > a {
+    background-color: #dd1818;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0.6rem 2rem;
+    border-radius: 5rem;
 }
 
+@media (max-width: 1023px) {
+    article#qna > .logo {
+        padding: 2rem 2rem;
+    }
+    article#qna > .logo > a > img {
+        width: 18vw
+    }
+    article#qna > .title > h1 {
+        font-size: 3.5rem;
+    }
+    #qna > .talk > a > img {
+        margin-top: 2rem;
+        width: 5rem;   
+    }
+    #qna > .table > table thead {
+        display: none;
+    }
+    #qna > .table > table .title {
+        width: 95vw;
+    }
+    #qna > .table > table tbody > tr {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        position: relative;
+    }
+    #qna > .table > table tbody > tr:first-of-type {
+        border-top: 1px solid #ffffff40;
+    }
+    #qna > .table > table .no {
+        display: none;
+    }
+    #qna > .table > table .title {
+        font-size: 1.7rem;
+        
+    }
+    #qna > .table > table .title > p {
+        margin-left: 1rem;
+        padding-top: 1rem;
+    }
+    #qna > .table > table .name {
+        width: auto;
+        min-width: none;
+        max-width: none;
+        text-align: left;
+        
+    }
+    #qna > .table > table .name > p {
+        margin-left: 1.2rem;
+        margin-top: 0.3rem;
+        padding-bottom: 0.7rem;
+    }
+    #qna > .table > table .reg {
+        position: absolute;
+        bottom: 0;
+        right: 1rem;
+        padding-bottom: 0.7rem;
+    }
+    #qna > .table > .search {
+        margin-top: 3rem;
+        justify-content: center;
+    }
+    #qna > .table > .search > input {
+        font-size: 1.2rem;
+        width: 18rem;
+        padding: 0.7rem 1.5rem;
+    }
+    #qna > .table > .search > button {
+        width: 3.2  rem;
+        height: 3.2rem;
+    }
+    #qna > .table > .btn {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #qna > .table > .btn > a {
+        font-size: 1.3rem;
+        padding: 0.7rem 3rem;
+    }
+}

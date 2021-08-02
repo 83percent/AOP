@@ -56,7 +56,7 @@ function App() {
                             <Link to="/faq">자주 묻는 질문</Link>
                         </li>
                         <li>
-                            <Link to="/help">문의하기</Link>
+                            <Link to="/help">상담문의</Link>
                         </li>
                     </ul>
                 </div>
