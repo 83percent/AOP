@@ -16,7 +16,8 @@ import hy4 from "../../contents/image/hy4.jpg";
 import hy5 from "../../contents/image/hy5.jpg";
 import hy6 from "../../contents/image/hy6.jpg";
 
-import BlogIcon from "../../contents/icons/blog.png";
+import BlogIcon from "../../contents/icons/naver_blog.png";
+import Instagram from "../../contents/icons/instagram.png";
 
 const HyeongSeong = () => {
     const [scaleImage, setScaleImage] = useState(null);
@@ -140,7 +141,7 @@ const HyeongSeong = () => {
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/aop_hsj/">
-                            <i className='fab fa-instagram'></i>
+                            <img src={Instagram} alt="instagram" />
                         </a>
                     </li>
                     <li>

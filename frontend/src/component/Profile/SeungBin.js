@@ -9,6 +9,7 @@ import "../../contents/css/profile/SeungBin.css";
 import Logo from "../../contents/logo/acp_black.png";
 import sb_1 from "../../contents/image/sb_1.jpg";
 
+import Instagram from "../../contents/icons/instagram.png";
 
 const SeungBin = () => {
     useEffect(() => {
@@ -98,7 +99,7 @@ const SeungBin = () => {
                 <ul>
                     <li>
                         <a href="https://www.instagram.com/loadedd443/">
-                            <i className='fab fa-instagram'></i>
+                            <img src={Instagram} alt="instagram" />
                         </a>
                     </li>
                 </ul>

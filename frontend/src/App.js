@@ -6,6 +6,8 @@ import './contents/fonts/Montserrat_use.css';
 
 import { Link } from 'react-router-dom';
 import logo from './contents/logo/logo.png';
+import instagram from './contents/icons/instagram.png';
+import blog from './contents/icons/naver_blog.png';
 import { createContext } from "react";
 import { Switch, Route } from "react-router-dom";
 
@@ -37,8 +39,11 @@ function App() {
         </Switch>
         <footer>
             <div className="SNS">
-                <a href="/">
-                    <i className='fab fa-instagram'></i>
+                <a href="https://www.instagram.com/aoppt_sunae/">
+                    <img src={instagram} alt="instagram" />
+                </a>
+                <a href="https://blog.naver.com/hyenggoo1 ">
+                    <img src={blog} alt="blog" />
                 </a>
             </div>
         
@@ -56,7 +61,7 @@ function App() {
                             <Link to="/faq">자주 묻는 질문</Link>
                         </li>
                         <li>
-                            <Link to="/help">상담문의</Link>
+                            <Link to="/help">문의하기</Link>
                         </li>
                     </ul>
                 </div>

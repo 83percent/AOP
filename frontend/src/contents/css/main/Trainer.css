@@ -23,6 +23,8 @@
 }
 .home > section.trainer > .image > a > img {
     width: 30rem;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 1023px) {

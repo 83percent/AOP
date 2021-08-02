@@ -20,7 +20,8 @@ const Main = () => {
             <section className="main-title">
                 <div className="title">
                     <h1>여러분을 스튜디오로 초대합니다.</h1>
-                    <p>삶의 변화를 약속하는 Art of Personal Training</p>
+                    <h1>삶의 변화를 약속하는 </h1>
+                    <h1>Art of Personal Training</h1>
                 </div>
             </section>
             <Program />

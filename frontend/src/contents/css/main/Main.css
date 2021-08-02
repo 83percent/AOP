@@ -187,21 +187,23 @@
     margin-top: 1rem;
     cursor: pointer;
 }
-
 .home > .main-title {
-    margin: 20rem 0;
-}
-.home > .main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
     text-align: center;
-
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ),url('../../image/back.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .home > .main-title > .title > h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 .home > .main-title > .title > p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
-    color: #ffffff90;
+    color: #ffffff;
 }
 
 
@@ -236,7 +238,7 @@
         margin-top: 0;
     }
     .home > .main-title > .title > h1 {
-        font-size: 3.0rem;
+        font-size: 2.0rem;
     }
     .home > .main-title > .title > p {
         font-size: 1.3rem;

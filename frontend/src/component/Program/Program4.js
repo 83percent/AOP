@@ -42,7 +42,17 @@ const Program1 = () => {
                     </div>
                 </div>
             </section>
-            
+            <section className="recommand">
+                <h1>이런 분들에게 추천해요.</h1>
+                <div>
+                    <div className="dot"></div>
+                    <p>체중감량을 원하시는 분</p>
+                </div>
+                <div>
+                    <div className="dot"></div>
+                    <p>몸매를 변화시키고 싶은 분</p>
+                </div>
+            </section>
         </main>
     )
 }

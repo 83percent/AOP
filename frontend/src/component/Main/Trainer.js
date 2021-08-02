@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 // Image
 import Trainer1 from '../../contents/image/trainer1.jpg';
-import Trainer2 from '../../contents/image/trainer2_2.jpg';
+import Trainer2 from '../../contents/image/trainer2.png';
 
 // CSS
 import '../../contents/css/main/Trainer.css';

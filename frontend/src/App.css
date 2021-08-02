@@ -14,10 +14,10 @@ footer > .SNS {
 footer > .SNS > a {
   margin-right: 1rem;
   cursor: pointer;
+  
 }
-footer > .SNS > a > i {
-  font-size: 46px;
-  color: #ffffff;
+footer > .SNS > a > img {
+  width: 46px;
 }
 footer > .map {
   display: flex;

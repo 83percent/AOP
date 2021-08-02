@@ -107,7 +107,7 @@ const QnA = () => {
                     </button>
                 </div>
                 <div className="btn">
-                    <Link to="/qna/write">문의 글쓰기</Link>
+                    <Link to="/help/write">문의 글쓰기</Link>
                 </div>
             </section>
         </article>

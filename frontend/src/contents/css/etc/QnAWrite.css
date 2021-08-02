@@ -1,0 +1,135 @@
+#write {
+    min-height: 100vh;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article#write > .logo {
+    padding: 2rem 4rem;
+    text-align: center;
+}
+article#write > .logo > a {
+    height: 10rem;
+    cursor: pointer;
+}
+article#write > .logo > a > img {
+    width: 6vw;
+}
+article#write > .title {
+    width: 100%;
+    padding-top: 3rem;
+    text-align: center;
+    color: #ffffff;
+}
+article#write > .title > h1 {
+    font-size: 4.0rem;
+}
+
+/*
+    input-wrapper
+*/
+article#write > .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: #fff;    
+    background-color: tomato;
+    background: #222;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+article#write > .input-wrapper > div {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 0.6rem;
+}
+article#write > .input-wrapper > div > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+article#write > .input-wrapper > .row > div:first-of-type {
+    margin-right: 2rem;
+}
+article#write > .input-wrapper > div > div > p {
+    margin-bottom: 0.3rem;
+}
+article#write > .input-wrapper > div > div > input, article#write > .input-wrapper > div > div > textarea {
+    all: unset;
+    flex-grow: 1;
+    background-color: #333;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0.7rem;
+    font-size: 1.1rem;
+}
+article#write > .input-wrapper > div > div > textarea {
+    height: 15rem;
+}
+article#write > .input-wrapper > .row > div > input {
+    width: 13rem;
+}
+article#write > button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    background-color: #dd1818;;
+}
+article#write > button > i {
+    color: #ffffff;
+    font-size: 2.0rem;
+}
+
+
+@media (max-width: 1023px) {
+    article#write > .logo {
+        padding: 2rem 2rem;
+    }
+    article#write > .logo > a > img {
+        width: 18vw
+    }
+    article#write > .title > h1 {
+        font-size: 3.5rem;
+    }
+    article#write > .input-wrapper > div {
+        flex-direction: column;
+        margin-bottom: 1.0rem;
+    }
+    article#write > .input-wrapper > .row > div:first-of-type {
+        margin-right: 0;
+    }
+    article#write > .input-wrapper > .row > div {
+        margin-bottom: 1rem;
+    }
+    article#write > .input-wrapper > div > div > p {
+        font-size: 1.3rem;
+    }
+    article#write > .input-wrapper > div > div > input {
+        width: 77vw;
+    }
+    article#write > .input-wrapper > div > div > input, article#write > .input-wrapper > div > div > textarea {
+        font-size: 1.3rem;
+    }
+    article#write > .input-wrapper > .row > div > input {
+        width: auto;
+        flex-grow: 1;
+    }
+    article#write > .input-wrapper > .row > div:last-of-type {
+        margin-bottom: 0;
+    }
+    article#write > button {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    article#write > button > i {
+        font-size: 2.5rem;
+    }
+}
