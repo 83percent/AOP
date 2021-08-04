@@ -1,16 +1,14 @@
-import MainImage from '../../contents/image/home_background.jpg';
 
-const Program1 = () => {
+const Program2 = () => {
     return (
-        <main style={{backgroundImage: `linear-gradient(318deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 44%), url(${MainImage})`}}>
-            <header>
+        <main id="program2">
+            <div className="title">
                 <h1>재활, 체형 교정 트레이닝</h1>
-            </header>
-            <section className="explain">
                 <p>수술을 끝내고 컨디션 회복을 위하여 운동을 시작한 고객, 움직임 기능 장애가 있는 고객, 만성통증이 있는 고객들을 위하여 통증조절, 신체 기능 개선, 체내 순환을 위한 프로그램입니다.</p>
                 <p>다수의 환자가 재활을 하지 않아 통증 재발, 만성통증 발현, 재부상 등이 발생합니다.</p>
-                <p>재활프로그램은 움직임으로 인한 위험 민감 군에 속하는 고객들을 대상으로 적용되는 트레이닝인 만큼 스포츠의학 지식을 기반으로 전문 트레이너가 섬세한 프로그램을 제공합니다.</p>
-            </section>
+                <p>재활프로그램은 움직임으로 인한 위험 민감 군에 속하는 고객들을 대상으로 적용되는 트레이닝인 만큼 <strong>스포츠의학 지식을 기반으로 전문 트레이너가 섬세한 프로그램을 제공</strong>합니다.</p>
+            </div>
+            <div className="image-frame"></div>
             <section className="process">
                 <h1>진행과정</h1>
                 <div>
@@ -45,18 +43,18 @@ const Program1 = () => {
                 <h1>이런 분들에게 추천해요.</h1>
                 <div>
                     <div className="dot"></div>
-                    <p>수술 후 후유증을 겪고 있는 분</p>
+                    <p>수술 후 <strong>후유증</strong>을 겪고 있는 분</p>
                 </div>
                 <div>
                     <div className="dot"></div>
-                    <p>움직임 시 전에 없던 통증이 발생하는 분</p>
+                    <p>움직임 시 <strong>전에 없던 통증</strong>이 발생하는 분</p>
                 </div>
                 <div>
                     <div className="dot"></div>
-                    <p>자신의 체형이 틀어졌다고 생각되는 분</p>
+                    <p>자신의 <strong>체형이 틀어졌다고 생각</strong>되는 분</p>
                 </div>
             </section>
         </main>
     )
 }
-export default Program1;
+export default Program2;

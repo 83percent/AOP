@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { NavLink, Route, Switch } from 'react-router-dom';
 
 // Component
@@ -11,27 +12,54 @@ import Program4 from "../component/Program/Program4";
 import "../contents/css/program/Program.css";
 
 
-const ProgramRouter = () => {
+
+const ProgramRouter = ({match}) => {
+    const asideRef = useRef(null);
+    const event = {
+        asideToggle : function(bool) {
+            if(bool !== undefined) {
+                asideRef.current.classList.toggle("on", bool);
+            } else {
+                asideRef.current.classList.toggle("on")
+            }
+            
+        }
+    }
     return (
-        <article className="program">
-            <aside>
-                <h1>프로그램</h1>
-                <NavLink to="/program/3" replace>
-                    <div></div>
-                    <p>웨이트 트레이닝</p>
-                </NavLink>
-                <NavLink to="/program/1" replace>
-                    <div></div>
-                    <p>기능성 트레이닝</p>
-                </NavLink>
-                <NavLink to="/program/2" replace>
-                    <div></div>
-                    <p>재활, 체형 교정 트레이닝</p>
-                </NavLink>
-                <NavLink to="/program/4" replace>
-                    <div></div>
-                    <p>다이어트</p>
-                </NavLink>
+        <article id="program">
+            <aside className={`${match.params?.id ? "" : "on"}`} ref={asideRef}>
+                <div className="title">
+                    <h1>프로그램</h1>
+                    <button onClick={() => event.asideToggle()}>
+                        <i className="material-icons">keyboard_arrow_down</i>
+                    </button>
+                </div>
+                <ul>
+                    <li onClick={() => event.asideToggle(false)}>
+                        <NavLink to="/program/3" replace > 
+                            <div></div>
+                            <p>웨이트 트레이닝</p>
+                        </NavLink>
+                    </li>
+                    <li onClick={() => event.asideToggle(false)}>
+                        <NavLink to="/program/1" replace>
+                            <div></div>
+                            <p>기능성 트레이닝</p>
+                        </NavLink>
+                    </li>
+                    <li onClick={() => event.asideToggle(false)}>
+                        <NavLink to="/program/2" replace>
+                            <div></div>
+                            <p>재활, 체형 교정 트레이닝</p>
+                        </NavLink>
+                    </li>
+                    <li onClick={() => event.asideToggle(false)}>
+                        <NavLink to="/program/4" replace>
+                            <div></div>
+                            <p>다이어트</p>
+                        </NavLink>
+                    </li>
+                </ul>
             </aside>
             <Switch>
                 <Route exact path="/program/1" component={Program1}/>

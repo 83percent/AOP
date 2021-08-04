@@ -1,26 +1,31 @@
-article.program {
+article#program {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    color: #ffffff;
 }
-article.program > aside {
-    position: absolute;
+article#program > aside {
+    position: fixed;
     top: 0;
     left: 0;
     width: 22rem;
     height: 100%;
     padding-left: 2rem;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-article.program > aside > h1 {
+article#program > aside > div > h1 {
     margin-top: 2rem;
     color: #ffffff;
     opacity: 0.5    ;
     font-size: 3.8rem;
     margin-bottom: 1rem;
 }
-article.program > aside > a {
+article#program > aside > div > button {
+    display: none;
+}
+article#program > aside > ul > li > a {
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -33,7 +38,7 @@ article.program > aside > a {
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
 }
-article.program > aside > a > div {
+article#program > aside > ul > li > a > div {
     border-radius: 50%;
     background: #dd1818;
     transition-duration: 0.2s;
@@ -41,10 +46,10 @@ article.program > aside > a > div {
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
 }
-article.program > aside > a:hover, article.program > aside > a.active {
+article#program > aside > ul > li > a:hover, article#program > aside > ul > li > a.active {
     opacity: 1;
 }
-article.program > aside > a > p {
+article#program > aside > ul > li > a > p {
     color: #ffffff;
     font-size: 2.3rem;
     transition-duration: 0.2s;
@@ -52,7 +57,7 @@ article.program > aside > a > p {
     -moz-transition-duration: 0.2s;
     -o-transition-duration: 0.2s;
 }
-article.program > aside > a.active > div {
+article#program > aside > ul > li > a.active > div {
     padding: 0.3rem;
     margin-right: 1rem;
 }
@@ -60,74 +65,280 @@ article.program > aside > a.active > div {
 /*
     main
 */
-article.program > main {
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #ffffff;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+#program > main {
+
 }
-article.program > main > * {
-    margin-left: 27rem;
-}
-article.program > main > header {
+#program > main > .title {
+    padding-left: 22rem;
     padding-top: 2rem;
 }
-article.program > main > header > h1 {
-    font-size: 4.3rem;
+#program > main > .title > h1 {
+    font-size: 3.5rem;
 }
-article.program > main > section.explain {
-    margin-top: 0.5rem;
+article#program > main > .title > p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #a1a1a6;
+    width: 70vw;
 }
-article.program > main > section.explain > p {
-    font-size: 1.1rem;
-    margin-top: 3px;
+article#program > main > .title > p > strong {
+    color: #ffffff;
+    font-weight: 600;
 }
-article.program > main > section {
-    margin-top: 3rem;
+article#program > main > section {
+    padding: 2rem 0;
+    padding-left: 22rem;
 }
-article.program > main > section > h1 {
-    font-size: 2.3rem;
+article#program > main > section > h1 {
+    font-size: 3.0rem;
 }
-article.program > main > section.process > div {
+article#program > main > .process > div {
     display: flex;
     align-items: center;
-    margin-top: 0.6rem;
+    overflow-x: auto;
+    padding-top: 1rem;
 }
-article.program > main > section.process > div > div {
+article#program > main > .process > div > div {
+    background: #ffffff40;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    min-width: 8rem;
-    padding: 0.5rem 1rem;
-    height: 10rem;
-    background: #ffffff20;
-    border-radius: 10px;
+    justify-content: center;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 0 1rem;
+    min-width: 9rem;
+    min-height: 9rem;
 }
-article.program > main > section.process > div > div > p {
+article#program > main > .process > div > div:first-of-type {
+    margin-left: 0rem;
+}
+article#program > main > .process > div > div:last-of-type {
+    margin-right: 0rem;
+}
+article#program > main > .process > div > div > p {
     font-size: 1.3rem;
+    text-align: center;
 }
-article.program > main > section.process > div > i {
-    padding: 0 1rem;
-    font-size: 2.0rem;
+article#program > main > .recommand > h1 {
+    margin-bottom: 1rem;
 }
-article.program > main > section.recommand > div {
+article#program > main > .recommand > div {
+    margin-bottom: 0.3rem;
     display: flex;
     align-items: center;
 }
-article.program > main > section.recommand > h1 {
-    margin-bottom: 1rem;
+article#program > main > .recommand > div > .dot {
+    background: #dd1818;
+    padding: 0.3rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
 }
-article.program > main > section.recommand > div {
-    margin-top: 0.5rem;
-}
-    article#program > main > .title > p > strong {
-        color: #ffffff;
-        font-weight: 600;
-    }
-article.program > main > section.recommand > div > p {
+article#program > main > .recommand > div > p {
     font-size: 1.3rem;
+    font-weight: 600;
+    color: #a1a1a6;
+}
+article#program > main > .recommand > div > p > strong {
+    font-weight: 600;
+    color: #ffffff;
+}
+@media (max-width: 1023px) {
+    article#program > aside {
+        width: 100%;
+        padding-left: 0;
+        background: rgba(29,29,31,0.72);
+        height: auto;
+    }
+    article#program > aside > div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+    }
+    article#program > aside.on > div {
+        background: #222;
+    }
+    article#program > aside > div > h1 {
+        flex-grow: 1;
+        font-size: 2.2rem;
+        margin-left: 2rem;
+        opacity: 1;
+        margin: 0 0 0 2rem;
+    }
+    article#program > aside > div > button {
+        all: unset;
+        display: block;
+        padding: 0 2rem 0 4rem;
+        color: #ffffff;
+    }
+    article#program > aside > div > button > i {
+        transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+        font-size: 2.5rem;
+    }
+    article#program > aside.on > div > button > i {
+        transform: rotate(180deg);
+    }
+    article#program > aside > ul {
+        width: 100%;
+        padding: 0 2rem;
+        overflow: hidden;
+        height: 0;
+        
+        transition-duration: 0.3s;
+        -o-transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s;
+        -moz-transition-duration: 0.3s;
+    }
+    article#program > aside.on > ul {
+        height: 27rem;
+        background: #222;
+    }
+    article#program > aside > ul > li {
+        margin-bottom: 0.5rem;
+    }
+    /*
+        Main
+    */
+    article#program > main {
+        padding-top: 7rem;
+    }
+    article#program > main > .title {
+        padding: 0 2rem;
+    }
+    article#program > main > .title > h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    article#program > main > .title > p {
+        width: 100%;
+    }
+    article#program > main > section {
+        padding-left: 0rem;
+    }
+    article#program > main > section > h1 {
+        padding: 0 2rem;
+    }
+    article#program > main > .process > div {
+        padding-bottom: 1rem;
+    }
+    article#program > main > .process > div > div:first-of-type {
+        margin-left: 2rem;
+    }
+    article#program > main > .process > div > div:last-of-type {
+        margin-right: 2rem;
+    }
+    article#program > main > .recommand {
+        padding-bottom: 4rem;
+    }
+    article#program > main > .recommand > h1 {
+        margin-bottom: 1rem;
+    }
+    article#program > main > .recommand > div {
+        padding: 0 2rem;
+    }
+}
+
+#program1 {
+    background: rgb(0,0,0);
+    background: linear-gradient(315deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,1) 95%), url('../../image/func.jpg');
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+@media (max-width: 1023px) {
+    #program1 {
+        background: none;
+    }
+    #program1 > .image-frame {
+        width: 100%;
+        height: 30rem;
+        background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%), url('../../image/func.jpg');
+        background-size: 150%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0;
+
+    }
+}
+#program2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(315deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,1) 95%), url('../../image/re.jpg');
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+@media (max-width: 1023px) {
+    #program2 {
+        background: none;
+    }
+    #program2 > .image-frame {
+        width: 100%;
+        height: 30rem;
+        background-image: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.3) 35%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,1) 95%), url('../../image/re.jpg');
+        background-size: 120%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0;
+
+    }
+}
+#program3 {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.50) 50%, rgba(0,0,0,1) 90%), url('../../image/weight.jpg');
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+@media (max-width: 1023px) {
+    #program3 {
+        background: none;
+    }
+    #program3 > .image-frame {
+        width: 100%;
+        height: 30rem;
+        background-image: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.3) 35%, rgba(0,0,0,0.3) 65%, rgba(0,0,0,1) 95%), url('../../image/weight.jpg');
+        background-size: 110%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0;
+
+    }
+}
+#program4 {
+    background: rgb(0,0,0);
+    background: linear-gradient(315deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,1) 95%), url('../../image/diet.jpg');
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100vh;
+}
+@media (max-width: 1023px) {
+    #program4 {
+        background: none;
+    }
+    #program4 > .image-frame {
+        width: 100%;
+        height: 30rem;
+        background-image: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,1) 95%), url('../../image/diet.jpg');
+        background-size: 110%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        position: relative;
+        bottom: 0;
+
+    }
 }

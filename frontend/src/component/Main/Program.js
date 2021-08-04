@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import dumbbell from '../../contents/image/dumbbell.jpg';
+import program_main from '../../contents/image/program_main.png';
 import '../../contents/css/main/Program.css';
 const Program = () => {
     return (
@@ -20,7 +20,7 @@ const Program = () => {
                 </div>
             </div>
             <div className="image-frame">
-                <img src={dumbbell} alt="home"/>
+                <img src={program_main} alt="home"/>
             </div>
         </section>
     )

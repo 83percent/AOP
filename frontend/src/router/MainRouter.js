@@ -74,7 +74,7 @@ const MainRouter = () => {
             </nav>
             <Switch>
                 <Route exact path="/" component={Main} />
-                <Route path="/program" component={ProgramRouter} />
+                <Route path={["/program/:id","/program"]} component={ProgramRouter} />
             </Switch>
             
         </div>
