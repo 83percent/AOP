@@ -124,12 +124,10 @@ article.program > main > section.recommand > h1 {
 article.program > main > section.recommand > div {
     margin-top: 0.5rem;
 }
-article.program > main > section.recommand > div > .dot {
-    border-radius: 50%;
-    background: #dd1818;
-    margin-right: 1rem;
-    padding: 0.25rem;
-}
+    article#program > main > .title > p > strong {
+        color: #ffffff;
+        font-weight: 600;
+    }
 article.program > main > section.recommand > div > p {
     font-size: 1.3rem;
 }
