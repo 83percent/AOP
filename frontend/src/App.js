@@ -87,6 +87,10 @@ function App() {
                 <h2 className="en">Copyright © AOP All Rights Reserved.<br/>Made By 83percent.</h2>
             </address>
         </footer>
+        <nav className="top-button" onClick={() => window.scrollTo(0, 0)}>
+            <i className="material-icons">keyboard_arrow_up</i>
+            <p>TOP</p>
+        </nav>
     </ServerContext.Provider>
   );
 }

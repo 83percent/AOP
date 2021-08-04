@@ -54,7 +54,7 @@ const MainRouter = () => {
                         <div>
                             <p>전화번호</p>
                             <input type="text" />
-                        </div>
+                        </div>  
                         <div>
                             <p>운동목적</p>
                             <input type="text" />
