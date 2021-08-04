@@ -1,55 +1,60 @@
 import Slider from "react-slick";
 import { memo } from "react";
+import { Link } from 'react-router-dom';
 
 // CSS
 import '../../contents/css/studio/Studio.css';
+
+// Image
+import Logo from '../../contents/logo/logo.png';
+
+import studio_3 from '../../contents/image/studio/studio_3.jpg';
+import studio_4 from '../../contents/image/studio/studio_4.jpg';
+import studio_5 from '../../contents/image/studio/studio_5.jpg';
+import studio_6 from '../../contents/image/studio/studio_6.jpg';
+import studio_7 from '../../contents/image/studio/studio_7.jpg';
+import studio_8 from '../../contents/image/studio/studio_8.jpg';
+import studio_9 from '../../contents/image/studio/studio_9.jpg';
+import studio_10 from '../../contents/image/studio/studio_10.jpg';
+import studio_11 from '../../contents/image/studio/studio_11.jpg';
+import studio_12 from '../../contents/image/studio/studio_12.jpg';
+import studio_13 from '../../contents/image/studio/studio_13.jpg';
+import studio_14 from '../../contents/image/studio/studio_14.jpg';
+import studio_15 from '../../contents/image/studio/studio_15.jpg';
+import studio_16 from '../../contents/image/studio/studio_16.jpg';
 
 const Studio = () => {
     const settings = {
         dots: true,
         infinite: false,
         speed: 500,
-        arrow: true,
+        autoplay : true,
+        autoplaySpeed: 3500,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 0,
     };
+    const resource = [studio_3, studio_4, studio_5, studio_6, studio_7, studio_8, studio_9, studio_10,
+        , studio_11, studio_12, studio_13, studio_14, studio_15, studio_16 ];
     return (
         <article id="studio">
-            <h1>시설 사진</h1>
+            <div className="title">
+                <Link to="/">
+                    <img src={Logo} alt="logo" />
+                </Link>
+                <h1>시설 사진</h1>
+            </div>
             <div className="container">
                 <Slider {...settings}>
-                    <div>
-                        <div className="card">
-                            <p>전형성 선생님과 1년동안 수업을 진행하면서 많은 변화가 있었어요. </p>
-                            <p>운동은 시도조차 해보지 않던 저가 어느 순간부터는 운동을 하지 않으면 하루를 제대로 마무리 하지 않은 기분이에요. </p>
-                            <h4>이0슬 회원님</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="card">
-                            <p>PT경험이 다수 있지만 이번 PT만큼 재밌게 운동했던 적은 없었던 것 같습니다. 안승빈 선생님은 운동도 잘 알려주시지만 수업 순간순간이 지루할 틈이 없었어요. 선생님의 위트에 항상 놀랐던 거 같아요.....</p>
-                            <h4>김0린 회원님</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="card">
-                            <p>저는 분석적인 성향을 가진 사람입니다. 그런 저에게 전형성 선생님은 아주 잘 맞는 분이십니다. 워낙 다양한 운동 프로그램을 준비해서 오시는 분이지만 매 운동마다 이 자세는 왜 이렇게 하는 것이고 기대되는 효과는 무엇인지 자세히 설명해주십니다.</p>
-                            <h4>김0욱 회원님</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="card">
-                            <p>취업을 준비하면서 우울한 감정을 많이 느끼고 실제로 병원 약도 먹었지만 PT를 하면서 먹는 약의 양이 현저히 줄어들었어요. 안승빈 선생님이 언제나 긍정적인 말과 작은 성취에도 칭찬해주시니 효과가 있었던 거 같아요.</p>
-                            <h4>강0늘 회원님</h4>
-                        </div>
-                    </div>
-                    <div>
-                        <div className="card">
-                            <p>아무리 중량운동을 해도 근육량이 증가하지 않아 더 이상 웨이트 트레이닝에 대한 열정이 식었던 찰나 PT를 받게 되었습니다. 전형성 선생님께서 “신체는 언제나 새로운 자극을 원한다”라는 설명과 함께 다양한 자극을 줄 수 있는 운동 프로그램을 준비해오셨고 저는 3달간 근육량이 2kg이나 증가할 수 있었습니다.</p>
-                            <h4>정0 회원님</h4>
-                        </div>
-                    </div>
+                    {
+                        resource.map((element, index) => (
+                            <div key={index}>
+                                <div className="card">
+                                    <img src={element} alt={index} />
+                                </div>
+                            </div>
+                        ))
+                    }
                 </Slider>
             </div>
         </article>

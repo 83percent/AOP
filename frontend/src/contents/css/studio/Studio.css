@@ -1,11 +1,24 @@
 article#studio {
-    background: #fff;
+    background: #000000;
     min-height: 100vh;
     /* background-image: url("../../image/"); */
 }
+#studio > .title {
+    text-align: center;
+    padding-top: 2rem;
+}
+#studio > .title > h1 {
+    color: #fff;
+    margin-top: 0.5rem;
+    font-size: 2.5rem;
+}
+#studio > .title > a > img {
+    width: 6vw;
+}
 #studio > .container {
     width: 100%;
-    background: #fff;
+    background: #000;
+    padding-bottom: 5rem;
 }
 #studio > .container .slick-track {
     display: flex;
@@ -27,20 +40,46 @@ article#studio {
     padding: 8px;
     position: relative;
     margin: 15px;
-    height: 15rem;
-    border-radius: 0.3rem;
-    background: #88888830;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,0.25);
     transition: all 0.3s ease-in-out;
     z-index: 1;
 }
-#studio .card h4 {
-    color: #a1a1a6;
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
+#studio .card > img {
+    width: 50vw;
+    height: 80vh;
+    object-fit: contain;
 }
-#studio .card p {
-    color: #ffffff;
-    font-size: 1.3rem;
-    line-height: 1.5;
+#studio > .container > .slick-slider > .slick-dots {
+    text-align: center;
+}
+#studio > .container > .slick-slider > .slick-dots > li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+#studio > .container > .slick-slider > .slick-dots > li > button {
+    all: unset;
+    border-radius: 50%;
+    background: #dd1818;
+    opacity: 0.3;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 0rem;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+#studio > .container > .slick-slider > .slick-dots > li.slick-active > button {
+    opacity: 1;
+}
+@media (max-width: 1023px) {
+    
+    #studio > .title > a > img {
+        width: 18vw
+    }
+    #studio .card > img {
+        width: 100vw;
+        height: auto;
+        object-fit: contain;
+    }
+    #studio > .container {
+        padding-bottom: 2rem;
+    }
 }

@@ -49,9 +49,10 @@ footer > address {
   padding-top: 3rem;
   width: 80%;
 }
-footer > address > img {
+footer > address > a > img {
   width: 5rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }
 footer > address > h2 {
   color: #ffffff;

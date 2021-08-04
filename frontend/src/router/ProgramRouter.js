@@ -17,6 +17,10 @@ const ProgramRouter = ({match}) => {
     const asideRef = useRef(null);
     const event = {
         asideToggle : function(bool) {
+            if(!match.params?.id) {
+                asideRef.current.classList.add("on");
+                return;
+            }
             if(bool !== undefined) {
                 asideRef.current.classList.toggle("on", bool);
             } else {

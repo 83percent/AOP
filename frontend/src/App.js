@@ -78,7 +78,9 @@ function App() {
                 </div>
             </div>
             <address>
-                <img src={logo} alt="logo" />
+                <Link to="/">
+                    <img src={logo} alt="logo" />
+                </Link>
                 <p>에이오피</p>
                 <p>사업자 등록번호: 614-53-00713 | 대표: 안승빈</p>
                 <p>경기도 성남시 분당구 황새울로200번길 34 Ko Fo Mo 빌딩 205, 206호</p>
