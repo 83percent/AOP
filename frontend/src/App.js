@@ -18,12 +18,13 @@ import StudioRouter from "./router/StudioRouter";
 import HelpRouter from "./router/HelpRouter";
 import HyeongSeong from "./component/Profile/HyeongSeong";
 import SeungBin from "./component/Profile/SeungBin";
+import AdminRouter from './router/AdminRouter';
 
 import ScrollToTop from "./router/ScrollTop";
 export const ServerContext = createContext(null);
 
 function App() {
-  const __server = 'http://localhost:3002';
+  const __server = 'http://localhost:3001';
   
   return (
     <ServerContext.Provider value={__server}>
@@ -36,6 +37,7 @@ function App() {
             <Route path={["/help","/faq"]} component={HelpRouter} />
             <Route path="/hyeongseong" component={HyeongSeong} />
             <Route path="/seungbin" component={SeungBin} />
+            <Route path="/admin" component={AdminRouter}/>
         </Switch>
         <footer>
             <div className="SNS">

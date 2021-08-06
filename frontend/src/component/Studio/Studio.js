@@ -34,8 +34,7 @@ const Studio = () => {
         slidesToScroll: 1,
         initialSlide: 0,
     };
-    const resource = [studio_3, studio_4, studio_5, studio_6, studio_7, studio_8, studio_9, studio_10,
-        , studio_11, studio_12, studio_13, studio_14, studio_15, studio_16 ];
+    const resource = [studio_3, studio_4, studio_5, studio_6, studio_7, studio_8, studio_9, studio_10, studio_11, studio_12, studio_13, studio_14, studio_15, studio_16 ];
     return (
         <article id="studio">
             <div className="title">
