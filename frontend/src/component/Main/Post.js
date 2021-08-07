@@ -62,8 +62,8 @@ const Post = () => {
                             <Slider {...settings}>
                                 {
                                     postData.map((element,index) => (
-                                        <div>
-                                            <div className="card" key={index}>
+                                        <div key={index}>
+                                            <div className="card">
                                                 {
                                                     element.content.split("\n").map((line,i2) => (
                                                         <p key={i2}>{line}</p>
