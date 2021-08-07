@@ -8,7 +8,7 @@
 // Middle Ware
 const express = require('express');
 const cors = require('cors');
-const __Mongoose = require('./lib/db/Mongo');
+const __Mongoose = require('./lib/db/mongo');
 
 const passport = require('passport');
 const session = require('express-session');
