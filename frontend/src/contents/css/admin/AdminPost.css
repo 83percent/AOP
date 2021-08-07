@@ -1,0 +1,64 @@
+#admin-post > ul {
+    padding: 2rem 0;
+    width: 50rem;
+}
+#admin-post > ul > li {
+    background: #ffffff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 1px solid #e3e8ee;
+    border-radius: 1rem;
+    position: relative;
+}
+#admin-post > ul > li > p {
+    font-size: 3.0rem;
+    margin: 0 1rem 0 0.5rem;
+}
+#admin-post > ul > li > div {
+    display: flex;
+    flex-direction: column;
+}
+#admin-post > ul > li > button {
+    all: unset;
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+#admin-post > ul > li:hover > button {
+    display: block;
+}
+#admin-post > .input-frame {
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+#admin-post > .input-frame > input, #admin-post > .input-frame > textarea {
+    all: unset;
+    border: 1px solid #e3e8ee;
+    background-color: #ffffff;
+}
+#admin-post > .input-frame > input {
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    width: 10rem;
+}
+#admin-post > .input-frame > textarea {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+#admin-post > .input-frame > button {
+    all: unset;
+    width: 100%;
+    text-align: center;
+    background-color: #00966B;
+    color: #fff;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

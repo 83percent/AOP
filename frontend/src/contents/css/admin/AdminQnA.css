@@ -1,0 +1,116 @@
+#admin-qna > ul {
+    width: 50rem;
+}
+#admin-qna > ul > li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid #888;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+#admin-qna .question-wrapper > div.info-frame {
+    display: flex;
+    align-items: center;
+}
+#admin-qna .question-wrapper > div.info-frame > div > i {
+    font-size: 2.0rem;
+}
+#admin-qna .question-wrapper > div.info-frame > h1 {
+    font-size: 1.3rem;
+    flex-grow: 1;
+    margin-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#admin-qna .question-wrapper > div.info-frame > p {
+    white-space: nowrap;
+    padding-left: 2rem;
+}
+#admin-qna > button {
+    all: unset;
+    padding: 0.7rem 0.5rem;
+    cursor: pointer;
+}
+#admin-qna > button:hover {
+    text-decoration: underline;
+}
+/*
+    Answer
+*/
+#admin-answer > .content-wrapper > .question-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50rem;
+    max-width: 50rem;
+}
+#admin-answer > .content-wrapper > div > h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+#admin-answer > .content-wrapper > .question-wrapper > .question-frame {
+    background: #ccc;
+}
+#admin-answer > .content-wrapper > div > div {
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 50rem;
+    overflow: hidden;
+}
+#admin-answer > .content-wrapper > div > div > h2 {
+    border-bottom: 1px solid #888;
+    margin-bottom: 0.9rem;
+    padding-bottom: 0.4rem;
+    max-width: 50rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#admin-answer > .content-wrapper > div > div > h4 {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: right;
+}
+#admin-answer > .content-wrapper > .answer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50rem;
+    max-width: 50rem;
+}
+#admin-answer > .content-wrapper > .answer-wrapper > .answer-frame {
+    background: #007AFF;
+    color: #ffffff;
+}
+#admin-answer > .input-wrapper {
+    width: 50rem;
+    max-width: 50rem;
+    min-width: 50rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+#admin-answer > .input-wrapper > textarea {
+    all: unset;
+    background: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #e3e8ee;
+    padding: 1rem;
+    height: 7rem;
+}
+#admin-answer > .input-wrapper > div {
+    text-align: right;
+    margin-top: 0.5rem;
+}
+#admin-answer > .input-wrapper > div > button {
+    all: unset;
+    color: #ffffff;
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

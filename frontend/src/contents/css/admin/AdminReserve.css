@@ -1,0 +1,71 @@
+#admin-reserve > ul {
+    width: 50rem;
+    margin-bottom: 1rem;
+}
+#admin-reserve > ul > li {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 1rem;
+    border: 1px solid #e3e8ee;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+#admin-reserve > ul > li > button {
+    all: unset;
+    display: none;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+}
+#admin-reserve > ul > li:hover > button {
+    display: block;
+}
+#admin-reserve > ul > li > .check-frame > i {
+    padding: 0 1rem 0 0.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+#admin-reserve > ul > li > .info-frame {
+    width: 100%;
+}
+#admin-reserve > ul > li > .info-frame > ol {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+#admin-reserve > ul > li > .info-frame > ol > li {
+    overflow: hidden;
+    width: 10rem;
+    text-overflow: ellipsis;
+}
+#admin-reserve > ul > li > .info-frame > ol > li.purpose {
+    flex-grow: 1;
+}
+#admin-reserve > ul > li > .info-frame h2 {
+    color: #888;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+}
+#admin-reserve > ul > li > .info-frame p {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+#admin-reserve > ul > li > .info-frame > div {
+    margin-top: 0.5rem;
+}
+#admin-reserve > ul > li > .info-frame > div > p {
+
+}
+#admin-reserve > button {
+    all: unset;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+#admin-reserve > button:hover {
+    text-decoration: underline;
+}

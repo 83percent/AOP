@@ -11,7 +11,6 @@ const StatusCode = require("../lib/status-code");
 
 router.post('/', passport.authenticate('local'),
     function(req, res) {
-        console.log("cll")
         if(req.user) {
             res.send({
                 _id: req.user._id
@@ -23,27 +22,34 @@ router.post('/', passport.authenticate('local'),
 );
 
 passport.use(new LocalStrategy (
-    function(username, password, done) {
+    async function(username, password, done) {
         AdminModel.findById(username, (err, user) => {
             if(err) return done(err);
             else {
-                if(!user) {   
+                if(!user) {
                     return done(null, false, {message: 'Incorrect id'});
                 }
-                try {
-                    const match = password.length > 20 
-                        ? password === user.password
-                        : bcrypt.compareSync(password, user.password);
-                    if(match) {
-                        return done(null, user);
-                    } else {
-                        return done(null, false, {message: 'Incorrect password'});
+                user = user.toObject();
+                if(user.state === 0) {
+                    if(password === '123456789a!') return done(null, user);
+                    else return done(null, false, {message: 'Incorrect password'});
+                } else if(user.state === 1){
+                    try {
+                        const match = password.length > 20 
+                            ? password === user.password
+                            : bcrypt.compareSync(password, user.password);
+                        if(match) {
+                           return done(null, user);
+                        } else {
+                           return done(null, false, {message: 'Incorrect password'});
+                        }
+                    } catch(e) {
+                       return done(e);
                     }
-                } catch(e) {
-                    return done(e);
+                } else {
+                    return done(null, false, {message : 'un active shop'});
                 }
             }
-            
         });
     }
 ));

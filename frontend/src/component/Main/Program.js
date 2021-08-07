@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import program_main from '../../contents/image/program_main.png';
+import program_main from '../../contents/image/program_main2.jpg';
 import '../../contents/css/main/Program.css';
 const Program = () => {
     return (

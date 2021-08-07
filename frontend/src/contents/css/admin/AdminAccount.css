@@ -1,0 +1,29 @@
+#admin-account > div.input-pass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#admin-account > div.input-pass > p {
+    margin-top: 1rem;
+}
+#admin-account > div.input-pass > input {
+    all: unset;
+    width: 17rem;
+    font-size: 1.1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+#admin-account > div.input-pass > button {
+    all: unset;
+    margin-top: 0.5rem;
+    width: 21rem;
+    background-color: #00966B;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5rem 0;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}

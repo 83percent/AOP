@@ -4,6 +4,10 @@ const AdminSchema = new Mongoose.Schema({
     password : {
         type: String,
         required: true
+    },
+    state : {
+        type: Number,
+        default : 0
     }
 }, {
     versionKey: false

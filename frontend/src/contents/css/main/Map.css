@@ -25,7 +25,7 @@
     position: relative;
 }
 .home > section.map > .map-wrapper > div > .map-frame {
-    height: 22.5rem;
+    height: auto;
 }
 .home > section.map > .map-wrapper > div > .map-frame > a > img {
     width: 40rem;
@@ -66,6 +66,7 @@
         width: 92%;
     }
     .home > section.map > .map-wrapper > div > .map-frame > a > img {
-        width: 100%;   
+        width: 99.5%;
+        height: 19rem;
     }
 }

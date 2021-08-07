@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 // local
-const __url = 'mongodb://127.0.0.1:27017/aop?poolSize=20&writeConcern=majority';
+//const __url = 'mongodb://127.0.0.1:27017/aop?poolSize=20&writeConcern=majority';
 // Atlas
-//const __url = 'mongodb+srv://83percent:9J4mKCBRJy8mXweB@cluster0.ige9k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const __url = 'mongodb+srv://aop_admin:wjsgudtjdWkd@@@cluster0.dqlbz.mongodb.net/aop?retryWrites=true&w=majority';
 
 mongoose.connect(
     __url, 

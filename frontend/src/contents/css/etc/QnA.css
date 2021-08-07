@@ -47,6 +47,7 @@ article#qna > .title > h1 {
 }
 #qna > .table > table {
     border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 table, th, td {
     text-align: center;
@@ -114,7 +115,6 @@ table, th, td {
 }
 #qna > .table > .more {
     text-align: center;
-    margin-top: 1rem;
 }
 #qna > .table > .more > button {
     all: unset;
