@@ -30,7 +30,8 @@ function App() {
         sessionStorage.setItem("authAOP",JSON.stringify(data));
         __setAdmin(data);
     }
-    const __server = 'http://localhost:3004';
+    //const __server = 'http://localhost:3004';
+    const __server = 'http://52.79.169.208:3004';
   
     return (
         <AdminContext.Provider value={{admin, setAdmin}}>
