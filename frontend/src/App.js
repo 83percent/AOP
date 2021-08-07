@@ -31,7 +31,7 @@ function App() {
         __setAdmin(data);
     }
     //const __server = 'http://localhost:3004';
-    const __server = 'http://52.79.169.208:3004';
+    const __server = 'https://server.aopstudio.com';
   
     return (
         <AdminContext.Provider value={{admin, setAdmin}}>
