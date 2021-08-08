@@ -124,4 +124,8 @@
     #qna-detail > .lock-wrapper > button > i {
         font-size: 2.5rem;
     }
+    #qna-detail > .content-wrapper > .question-wrapper, #qna-detail > .content-wrapper > .answer-wrapper {
+        width: 90vw;
+        max-width: 90vw;
+    }
 }
