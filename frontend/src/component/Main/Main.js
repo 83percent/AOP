@@ -7,7 +7,7 @@ import Post from './Post';
 import Map from './Map';
 
 // Video
-import mainVideo from '../../contents/video/video_2.mp4';
+//import mainVideo from '../../contents/video/video_2.mp4';
 
 const Main = () => {
     const makeMuted = (elt) => {
@@ -19,7 +19,7 @@ const Main = () => {
         <article className="home">
             <section className="top">
                 <video autoPlay muted ref={makeMuted}>
-                    <source src={mainVideo} type="video/mp4"/>
+                    <source src="https://aopstudio.s3.ap-northeast-2.amazonaws.com/video_2.mp4" type="video/mp4"/>
                 </video>
             </section>
             <section className="main-title">
