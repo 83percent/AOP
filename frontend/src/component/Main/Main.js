@@ -5,16 +5,17 @@ import Trainer from './Trainer';
 import QnA from './QnA';
 import Post from './Post';
 import Map from './Map';
+import { useEffect, useRef } from 'react';
 
 // Video
 //import mainVideo from '../../contents/video/video_2.mp4';
 
 const Main = () => {
-    const makeMuted = (elt) => {
-        if (elt) {
-            elt.muted = true;
-        }
-    }
+    const makeMuted = useRef(null);
+    useEffect(() => {
+        makeMuted.current.muted = true;
+        makeMuted.current.play();
+    }, [])
     return (
         <article className="home">
             <section className="top">
