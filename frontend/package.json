@@ -25,7 +25,6 @@
   },
   "reactSnap": {
     "include": [
-      "/",
       "/free",
       "/program",
       "/studio",

@@ -10,10 +10,15 @@ import Map from './Map';
 import mainVideo from '../../contents/video/video_2.mp4';
 
 const Main = () => {
+    const makeMuted = (elt) => {
+        if (elt) {
+            elt.muted = true;
+        }
+    }
     return (
         <article className="home">
             <section className="top">
-                <video muted autoPlay >
+                <video autoPlay muted ref={makeMuted}>
                     <source src={mainVideo} type="video/mp4"/>
                 </video>
             </section>
