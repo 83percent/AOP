@@ -19,6 +19,7 @@ import HelpRouter from "./router/HelpRouter";
 import HyeongSeong from "./component/Profile/HyeongSeong";
 import SeungBin from "./component/Profile/SeungBin";
 import AdminRouter from './router/AdminRouter';
+import SuSan from './component/Profile/SuSan';
 
 import ScrollToTop from "./router/ScrollTop";
 
@@ -45,6 +46,7 @@ function App() {
                     <Route path={["/help","/faq"]} component={HelpRouter} />
                     <Route path="/hyeongseong" component={HyeongSeong} />
                     <Route path="/seungbin" component={SeungBin} />
+                    <Route path="/susan" component={SuSan} />
                     <Route path="/admin" component={AdminRouter}/>
                 </Switch>
                 <footer>
