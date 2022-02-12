@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 // Image
 import Trainer1 from '../../contents/image/trainer1.jpg';
 import Trainer2 from '../../contents/image/trainer2.png';
+import Trainer3 from '../../contents/image/su2.jpg';
 
 // CSS
 import '../../contents/css/main/Trainer.css';
@@ -19,6 +20,9 @@ const Trainer = () => {
                 </Link>
                 <Link to="/hyeongseong">
                     <img src={Trainer2} alt="profile" />
+                </Link>
+                <Link to="/susan">
+                    <img src={Trainer3} alt="profile" />
                 </Link>
             </div>
         </section>

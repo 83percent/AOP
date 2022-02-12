@@ -86,6 +86,9 @@ function App() {
                                 <li>
                                     <Link to="/hyeongseong">전형성</Link>
                                 </li>
+                                <li>
+                                    <Link to="/susan">원수산</Link>
+                                </li>
                             </ul>
                         </div>
                     </div>
