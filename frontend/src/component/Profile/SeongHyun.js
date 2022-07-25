@@ -82,20 +82,21 @@ const SeongHyun = () => {
             </section>
             <section className="sns">
                 <h1>더 궁금한게 있다면.</h1>
-                {/*}
+                
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/aop_hsj/">
+                        <a href="https://www.instagram.com/_sunghyeonida/">
                             <img src={Instagram} alt="instagram" />
                         </a>
                     </li>
+                    {/*}
                     <li>
                         <a href="https://blog.naver.com/hyenggoo1 ">
                             <img src={BlogIcon} alt="blog" />
                         </a>
                     </li>
+                    {*/} 
                 </ul>
-                {*/}
             </section>
         </main>
     )
