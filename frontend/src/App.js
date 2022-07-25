@@ -22,6 +22,7 @@ import AdminRouter from './router/AdminRouter';
 import SuSan from './component/Profile/SuSan';
 
 import ScrollToTop from "./router/ScrollTop";
+import SeongHyun from './component/Profile/SeongHyun';
 
 export const ServerContext = createContext(null);
 export const AdminContext = createContext(null);
@@ -47,6 +48,7 @@ function App() {
                     <Route path="/hyeongseong" component={HyeongSeong} />
                     <Route path="/seungbin" component={SeungBin} />
                     <Route path="/susan" component={SuSan} />
+                    <Route path="/seonghyun" component={SeongHyun} />
                     <Route path="/admin" component={AdminRouter}/>
                 </Switch>
                 <footer>
@@ -88,6 +90,9 @@ function App() {
                                 </li>
                                 <li>
                                     <Link to="/susan">원수산</Link>
+                                </li>
+                                <li>
+                                    <Link to="/seonghyun">김성현</Link>
                                 </li>
                             </ul>
                         </div>

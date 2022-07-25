@@ -1,0 +1,250 @@
+main.hy {
+    overflow-x: hidden;
+}
+
+/*
+    Image Scale
+*/
+main.hy > .image-scale {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: #aaaaaa90;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+}
+main.hy > .image-scale > img {
+    width: auto;
+}
+main.hy > .image-scale.on {
+    display: flex;
+}
+
+main.hy > header {
+    height: 90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main.hy > header > .title {
+    z-index: 998;
+    text-align: center;
+}
+main.hy > header > .title > div > h1 {
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+main.hy > header > .title > div > h2 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+main.hy > header > img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+main.hy > section.history {
+    width: 100%;    
+}
+main.hy > section.history > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
+}
+main.hy > section.history > ul > li {
+    flex-basis: 25%;
+    width: 25%;
+    min-width: 25%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main.hy > section.history > ul > li >  h3 {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+main.hy > section.history > ul > li > p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.2rem;
+}
+
+main.hy > section.image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 8rem;
+}
+main.hy > section.image-wrapper img {
+    object-fit: cover;
+}
+main.hy > section.image-wrapper > div {
+    display: flex;
+    flex-direction: column;
+}
+main.hy > section.image-wrapper > div > ul {
+    display: flex;
+}
+main.hy > section.image-wrapper > div > ul > li {
+    display: flex;
+}
+main.hy > section.image-wrapper > div > ul > li.main-image {
+    width: 65vw;
+    height: 65vw;
+}
+main.hy > section.image-wrapper > div > ul > li.main-image > img {
+    height: 100%;
+}
+main.hy > section.image-wrapper > div > ul > li.sub-image {
+    display: flex;
+    flex-direction: column;
+    height: 65vw;
+}
+main.hy > section.image-wrapper > div > ul > li.sub-image > img {
+    width: 100%;
+    height: 100%;
+}
+main.hy > section.image-wrapper > div > div {
+    display: flex;
+}
+main.hy > section.image-wrapper > div > div > img {
+    height: 30vw;
+}
+main.hy > section.area {
+    display: flex;
+    padding: 5rem 0;
+    width: 70%;
+}
+
+main.hy > section.area.right {
+    justify-content: flex-end;
+}
+
+main.hy > section.area > div > h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+
+}
+main.hy > section.area > div > h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    top: 0.2rem;
+    opacity: 0.7;
+}
+main.hy > section.area > div {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+main.hy > section.area.left > div {
+    align-items: flex-start;
+    text-align: left;
+
+}
+main.hy > section.area.right > div {
+    align-items: flex-end;
+    text-align: right;
+}
+main.hy > section.area > div p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+main.hy > section.area > div > img {
+    width: 40rem;
+}
+main.hy > section.area > div a {
+    margin-top: 2rem;
+    color: #06c;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+main.hy > section.area > div a:hover > p {
+    text-decoration: underline;
+}
+main.hy > section.sns {
+    text-align: center;
+    padding: 8rem 0;
+}
+main.hy > section.sns > h1 {
+    font-size: 3.5rem;
+}
+main.hy > section.sns > ul {
+    padding-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main.hy > section.sns > ul > li {
+    margin-left: 1rem;
+}
+main.hy > section.sns > ul > li:first-child {
+    margin-left: 0;
+}
+main.hy > section.sns a {
+    cursor: pointer;
+    
+}
+main.hy > section.sns a > i {
+    font-size: 4rem;
+    color: #dd1818;
+}
+main.hy > section.sns a > img {
+    width: 3.8rem;
+}
+
+@media (max-width: 1023px) {
+    main.hy > section.history {
+        width: 92vw;
+        
+    }
+    main.hy > section.history > ul {
+        width: 92vw;
+    }
+    main.hy > section.history > ul > li {
+        text-align: center;
+        width: 40vw;
+        flex-basis: unset;
+        min-width: unset;
+        margin-bottom: 3rem;
+    }
+    main.hy > section.history > ul > li > p {
+        margin-bottom: 0.3rem;
+    }
+    main.hy > section.image-wrapper > div > ul {
+        flex-direction: column;
+    }
+    main.hy > section.image-wrapper > div > ul > li.main-image {
+        width: 100vw;
+    }
+    main.hy > section.image-wrapper > div > ul > li.main-image > img {
+        width: 100%;
+    }
+    main.hy > section.image-wrapper > div > ul > li.sub-image {
+        flex-direction: row;
+        height: 30vw;
+    }
+    main.hy > section.image-wrapper > div > ul > li.sub-image > img {
+        height: 30vw;
+        width: 50vw;
+    }
+    main.hy > .image-scale > img {
+        width: 100%;
+    }
+    main.hy > section.area {
+        width: 85vw;
+        padding: 3rem 0;
+    }
+    main.hy > section.area > div {
+        width: 100%;
+        
+    }
+}

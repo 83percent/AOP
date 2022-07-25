@@ -12,6 +12,7 @@
     font-size: 1.3rem;
     font-weight: 500;
     color: #ffffff90;
+    margin-bottom: 1rem;
 }
 .home > section.trainer > .image {
     display: flex;
@@ -19,7 +20,7 @@
     width: 100%;
 }
 .home > section.trainer > .image > a {
-    
+    margin-top: 0;
 }
 .home > section.trainer > .image > a > img {
     width: 30rem;
@@ -38,5 +39,6 @@
     .home > section.trainer > .image > a > img {
         width: 100%;
         border-radius: 1rem;
+        margin-bottom: 1rem;
     }
 }
