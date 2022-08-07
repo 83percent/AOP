@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 
 // Image
-import Trainer1 from '../../contents/image/trainer1.jpg';
-import Trainer2 from '../../contents/image/trainer2.png';
-import Trainer3 from '../../contents/image/su2.jpg';
-import Trainer4 from '../../contents/image/sh6.jpg';
+import Trainer1 from '../../contents/image/Trainer3.jpg';
+import Trainer2 from '../../contents/image/Trainer4.jpg';
+import Trainer3 from '../../contents/image/Trainer5.jpg';
+import Trainer4 from '../../contents/image/Trainer6.jpg';
+import Trainer5 from '../../contents/image/Trainer7.jpg';
 
 // CSS
 import '../../contents/css/main/Trainer.css';
@@ -29,6 +30,9 @@ const Trainer = () => {
                 </Link>
                 <Link to="/seonghyun">
                     <img src={Trainer4} alt="profile" />
+                </Link>
+                <Link to="/seunghwan">
+                    <img src={Trainer5} alt="profile" />
                 </Link>
             </div>
         </section>

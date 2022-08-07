@@ -20,6 +20,8 @@ import HyeongSeong from "./component/Profile/HyeongSeong";
 import SeungBin from "./component/Profile/SeungBin";
 import AdminRouter from './router/AdminRouter';
 import SuSan from './component/Profile/SuSan';
+import Trainer7 from './component/Profile/Trainer7';
+
 
 import ScrollToTop from "./router/ScrollTop";
 import SeongHyun from './component/Profile/SeongHyun';
@@ -49,6 +51,7 @@ function App() {
                     <Route path="/seungbin" component={SeungBin} />
                     <Route path="/susan" component={SuSan} />
                     <Route path="/seonghyun" component={SeongHyun} />
+                    <Route path="/seunghwan" component={Trainer7} />
                     <Route path="/admin" component={AdminRouter}/>
                 </Switch>
                 <footer>
@@ -93,6 +96,9 @@ function App() {
                                 </li>
                                 <li>
                                     <Link to="/seonghyun">김성현</Link>
+                                </li>
+                                <li>
+                                    <Link to="/seunghwan">윤승환</Link>
                                 </li>
                             </ul>
                         </div>
