@@ -9,8 +9,11 @@ import "../../contents/css/profile/HyeongSeong.css";
 import Logo from "../../contents/logo/acp_black.png";
 
 // Profile Image
-import Tariner7_1 from "../../contents/image/Trainer7_1.jpg";
-import Tariner7_2 from "../../contents/image/Trainer7_2.jpg";
+
+import Tariner7_3 from "../../contents/image/Trainer7_3.jpg";
+import Tariner7_4 from "../../contents/image/Trainer7_4.jpg";
+import Tariner7_5 from "../../contents/image/Trainer7_5.jpg";
+import Tariner7_6 from "../../contents/image/Trainer7_6.jpg";
 
 import Instagram from "../../contents/icons/instagram.png";
 
@@ -19,7 +22,7 @@ const Trainer7 = () => {
     const scaleRef = useRef(null);
     function imageScale(toggle, image) {
         if(toggle) {
-            setScaleImage(image);
+            setScaleImage(image);   
             scaleRef.current.classList.add("on");
         } else {
             scaleRef.current.classList.remove("on");
@@ -74,10 +77,16 @@ const Trainer7 = () => {
                 <div>
                     <ul>
                         <li className="main-image">
-                            <img src={Tariner7_2} alt="Profile 1" onClick={() => imageScale(true, Tariner7_2)}/>
+                            <img src={Tariner7_3} alt="Profile 1" onClick={() => imageScale(true, Tariner7_3)}/>
+                            <img src={Tariner7_4} alt="Profile 2" onClick={() => imageScale(true, Tariner7_4)}/>
                         </li>
-                        <li className="sub-image">
-                            <img src={Tariner7_1} alt="Profile 2" onClick={() => imageScale(true, Tariner7_1)}/>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li className="main-image">
+                            <img src={Tariner7_5} alt="Profile 1" onClick={() => imageScale(true, Tariner7_5)}/>
+                            <img src={Tariner7_6} alt="Profile 2" onClick={() => imageScale(true, Tariner7_6)}/>
                         </li>
                     </ul>
                 </div>

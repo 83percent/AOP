@@ -18,6 +18,7 @@ import hy6 from "../../contents/image/hy6.jpg";
 
 import BlogIcon from "../../contents/icons/naver_blog.png";
 import Instagram from "../../contents/icons/instagram.png";
+import YoutubeIcon from "../../contents/icons/icon_youtube.png";
 
 const HyeongSeong = () => {
     const [scaleImage, setScaleImage] = useState(null);
@@ -140,13 +141,18 @@ const HyeongSeong = () => {
                 <h1>더 궁금한게 있다면.</h1>
                 <ul>
                     <li>
-                        <a href="https://www.instagram.com/aop_hsj/">
+                        <a href="https://www.instagram.com/1mind___/">
                             <img src={Instagram} alt="instagram" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://blog.naver.com/hyenggoo1 ">
+                        <a href="https://blog.naver.com/hyenggoo1">
                             <img src={BlogIcon} alt="blog" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCtSibzTyjR8x7JSAFh8WWsg">
+                            <img src={YoutubeIcon} alt="youtube" />
                         </a>
                     </li>
                 </ul>
